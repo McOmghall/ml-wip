@@ -3,8 +3,8 @@ import os
 from locale import *
 import locale
 import matplotlib.pyplot as plt
+import neurolab 
 
-os.chdir('C://Users/Pedro/Desktop/')
 
 locale.setlocale(LC_NUMERIC, '')
 
@@ -65,3 +65,13 @@ mareas                  = pandas.Series(mareas[mareas.columns[1]].values, mareas
 oxigeno                 = pandas.Series(oxigeno[oxigeno.columns[1]].values, oxigeno[oxigeno.columns[0]])
 
 
+# Learn dataset
+
+input = pandas.concat([lluvias.resample('H'), mareas.resample('H'), conductividad.resample('H')], axis = 1).dropna()
+print(input[[0, 1, 2]].values)
+
+perceptron = neurolab.net.newff([[1, 1], [1, 1]], [5, 1])
+err = perceptron.train(input[[0, 1]].values, input[[2]].values, show=20)
+
+
+print(perceptron.sim(input[[0, 1]].values))

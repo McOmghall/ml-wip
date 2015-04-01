@@ -67,11 +67,18 @@ oxigeno                 = pandas.Series(oxigeno[oxigeno.columns[1]].values, oxig
 
 # Learn dataset
 
-input = pandas.concat([lluvias.resample('H'), mareas.resample('H'), conductividad.resample('H')], axis = 1).dropna()
+input = pandas.concat([(lluvias.resample('H') - lluvias.resample('H').mean()) / (lluvias.resample('H').max() - lluvias.resample('H').min())
+                       , (mareas.resample('H') - mareas.resample('H').mean()) / (mareas.resample('H').max() - mareas.resample('H').min())
+                       , (conductividad.resample('H') - conductividad.resample('H').mean()) / (conductividad.resample('H').max() - conductividad.resample('H').min())]
+                    , axis = 1).dropna()
 print(input[[0, 1, 2]].values)
 
-perceptron = neurolab.net.newff([[1, 1], [1, 1]], [5, 1])
-err = perceptron.train(input[[0, 1]].values, input[[2]].values, show=20)
+perceptron = neurolab.net.newff([[input.min()[0], input.max()[0]], [input.min()[1], input.max()[1]]], [5, 1])
+err = perceptron.train(input[[0, 1]].values, input[[2]].values, epochs=2000, goal=1, show=10)
 
+print(err)
+print("Ok")
 
-print(perceptron.sim(input[[0, 1]].values))
+input[3] = perceptron.sim(input[[0, 1]].values)
+input[[2, 3]].plot()
+plt.show()

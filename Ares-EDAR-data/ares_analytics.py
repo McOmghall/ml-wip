@@ -66,19 +66,63 @@ oxigeno                 = pandas.Series(oxigeno[oxigeno.columns[1]].values, oxig
 
 
 # Learn dataset
-
+# Base dataset
 input = pandas.concat([(lluvias.resample('H') - lluvias.resample('H').mean()) / (lluvias.resample('H').max() - lluvias.resample('H').min())
-                       , (mareas.resample('H') - mareas.resample('H').mean()) / (mareas.resample('H').max() - mareas.resample('H').min())
-                       , (conductividad.resample('H') - conductividad.resample('H').mean()) / (conductividad.resample('H').max() - conductividad.resample('H').min())]
-                    , axis = 1).dropna()
-print(input[[0, 1, 2]].values)
+             , (mareas.resample('H') - mareas.resample('H').mean()) / (mareas.resample('H').max() - mareas.resample('H').min())
+             , (conductividad.resample('H') - conductividad.resample('H').mean()) / (conductividad.resample('H').max() - conductividad.resample('H').min())]
+             , axis = 1).dropna()
 
-perceptron = neurolab.net.newff([[input.min()[0], input.max()[0]], [input.min()[1], input.max()[1]]], [5, 1])
-err = perceptron.train(input[[0, 1]].values, input[[2]].values, epochs=2000, goal=1, show=10)
+min_lluvias = input.min()[0]
+max_lluvias = input.max()[0]
+min_mareas  = input.min()[1]
+max_mareas  = input.max()[1]
 
-print(err)
-print("Ok")
+# Modified dataset with 5-hour windows for each parameter
+input = pandas.concat([input[[0]], input[[0]].shift(1), input[[0]].shift(2), input[[0]].shift(3), input[[0]].shift(4),
+		input[[1]], input[[1]].shift(1), input[[1]].shift(2), input[[1]].shift(3), input[[1]].shift(4),
+		input[[2]]], axis = 1, ignore_index=True).dropna()
 
-input[3] = perceptron.sim(input[[0, 1]].values)
-input[[2, 3]].plot()
-plt.show()
+
+#Saved hourly interpolated dataset to file, to convert data to 
+# 5 hour windows (i.e. 5 hour lluvias + 5 hour mareas to predict this hour conductividad)
+import time
+input.to_csv(time.strftime("%Y%m%d-%H%M%S") + "clean.csv")
+
+output = input[[10]]
+input  = input.drop(10, axis=1)
+
+print(output)
+
+# Create network with 3 layers, 10 inputs and random initialized
+net = neurolab.net.newff([[min_lluvias, max_lluvias]
+		, [min_lluvias, max_lluvias]
+		, [min_lluvias, max_lluvias]
+		, [min_lluvias, max_lluvias]
+		, [min_lluvias, max_lluvias]
+		, [min_mareas, max_mareas]
+		, [min_mareas, max_mareas]
+		, [min_mareas, max_mareas]
+		, [min_mareas, max_mareas]
+		, [min_mareas, max_mareas]]
+	, [20, 15, 10, 1])
+
+# Train network
+error = net.train(input.values, output.values, epochs=500, show=50, goal=0.02)
+
+net.save(time.strftime("%Y%m%d-%H%M%S") + ".rnasa")
+
+# Simulate network
+output['sim'] = net.sim(input.values)
+error = output[10] - output['sim']
+
+# Plot result
+from pylab import *
+
+figure, axes = subplots(nrows=2, ncols=1)
+
+print(figure)
+print(axes)
+output.plot(ax=axes[0])
+error.plot(ax=axes[1])
+
+show()

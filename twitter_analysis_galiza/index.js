@@ -4,9 +4,13 @@ var twitter = new twitterAPI({
     consumerSecret: 'qpvCHUiLvE3VTrOJk4EA4zQbLeXSUz1hnYSi8jCLf9XfwxZ279',
     callback: 'oob'
 });
-var rl = require('readline').createInterface(process.stdin, process.stdout);
 
 var token = {};
+
+if (process.argv[2] == null || process.argv[3] == null || process.argv[4] == null) {
+  console.log("Error: not enough arguments: node " + process.argv[1] + " <token> <secret> <query>");
+  return;
+}
 
 twitter.getRequestToken(function(error, requestToken, requestTokenSecret, results){
   if (error) {
@@ -18,21 +22,14 @@ twitter.getRequestToken(function(error, requestToken, requestTokenSecret, result
     };
   }
   
-  rl.question("Auth token: ", function(answer) {
-    token['token'] = answer.trim();
+  token['token'] = process.argv[2].trim();
+  token['secret'] = process.argv[3].trim();
+  console.log(JSON.stringify(token));
 
-    rl.question("Auth secret: ", function(answer) {
-      token['secret'] = answer.trim();
-      console.log(JSON.stringify(token));
+  var page = -1;
+  var results = [];
 
-      rl.question("Query: ", function(answer) {
-        var page = -1;
-        var results = [];
-
-        cursorLoop(page, answer.trim(), results);
-      });
-    });
-  });
+  cursorLoop(page, process.argv[4].trim(), results);
 });
 
 
@@ -51,24 +48,16 @@ function cursorLoop (page, q, results) {
       console.log(error);
     }
 
-    console.log(data.users.length);
-    console.log(page);
-
-    results.push(data);
-
     for (var n in data.users) {
-      var user = data.users[n];
-      console.log("Key " + n + " : ");
-      console.log("> " + user.screen_name + " @ " + user.location + "/" + user.profile_location + "(" + user.lang + ")");
-      console.log(">>>> geo " + JSON.stringify(user.geo_enabled));
-      console.log(">>>> lang " + JSON.stringify(user.lang));
-
-      console.log("");
+      results.push(data.users[n]);
     }
-    if (data.next_cursor == 0) {
+
+    if (data.next_cursor == 0 || data.next_cursor == null) {
+      console.log(results);
       return;
     }
-    cursorLoop(data.next_cursor, q, results);
+    
+    setTimeout(cursorLoop, 10000, data.next_cursor, q, results);
   });
 }
 

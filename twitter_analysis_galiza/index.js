@@ -4,6 +4,7 @@ var twitter = new twitterAPI({
     consumerSecret: 'qpvCHUiLvE3VTrOJk4EA4zQbLeXSUz1hnYSi8jCLf9XfwxZ279',
     callback: 'oob'
 });
+var rl = require('readline').createInterface(process.stdin, process.stdout);
 
 var token = {};
 
@@ -17,7 +18,6 @@ twitter.getRequestToken(function(error, requestToken, requestTokenSecret, result
     };
   }
   
-  var rl = require('readline').createInterface(process.stdin, process.stdout);
   rl.question("Auth token: ", function(answer) {
     token['token'] = answer.trim();
 
@@ -26,28 +26,49 @@ twitter.getRequestToken(function(error, requestToken, requestTokenSecret, result
       console.log(JSON.stringify(token));
 
       rl.question("Query: ", function(answer) {
-        twitter.search(
-          {
-            'q' : answer.trim(),
-            'result_type' : 'recent',
-            'count' : 100
-          },
-          token.token,
-          token.secret,
-          function (error, data, response) {
-           for (var tweet_n in data.statuses) {
-             var tweet = data.statuses[tweet_n];
-             console.log("Tweet key " + tweet_n + " : ");
+        var page = -1;
+        var results = [];
 
-             console.log("> " + tweet.user.name + " @ " + tweet.user.location);
-             console.log(">>>> geo " + JSON.stringify(tweet.geo));
-             console.log(">>>> coo " + JSON.stringify(tweet.coordinates));
-           
-             console.log("");
-           } 
-        });
+        cursorLoop(page, answer.trim(), results);
       });
     });
   });
 });
+
+
+function cursorLoop (page, q, results) {
+  twitter.followers('list',
+  {
+    'user_id' : q,
+    'result_type' : 'recent',
+    'count' : 200,
+    'cursor' : page
+  },
+  token.token,
+  token.secret,
+  function (error, data, response) {
+    if (error) {
+      console.log(error);
+    }
+
+    console.log(data.users.length);
+    console.log(page);
+
+    results.push(data);
+
+    for (var n in data.users) {
+      var user = data.users[n];
+      console.log("Key " + n + " : ");
+      console.log("> " + user.screen_name + " @ " + user.location + "/" + user.profile_location + "(" + user.lang + ")");
+      console.log(">>>> geo " + JSON.stringify(user.geo_enabled));
+      console.log(">>>> lang " + JSON.stringify(user.lang));
+
+      console.log("");
+    }
+    if (data.next_cursor == 0) {
+      return;
+    }
+    cursorLoop(data.next_cursor, q, results);
+  });
+}
 

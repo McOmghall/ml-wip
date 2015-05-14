@@ -1,0 +1,4232 @@
+{"request":{"token":"arSJ8sJHvWuVtguk3unFNpL3StyaT1ok","secret":"E9MkFdxrKOCyhfRUEyEl2TblqxK2LVIc"},"token":"219614766-PtciyetymgT2ZGPrwBbxUdmcORVrGnaAQNE37Sls","secret":"wTNdha5TL3rvvMJHPeYkfJJ7Idj48vJ9fzfgraivtAAsP"}
+{
+  "es": [
+    {
+      "name": "49carmonajose",
+      "geo": {
+        "type": "Point",
+        "coordinates": [
+          0,
+          0
+        ]
+      },
+      "place": {
+        "id": "206c436ce43a43a3",
+        "url": "https://api.twitter.com/1.1/geo/id/206c436ce43a43a3.json",
+        "place_type": "city",
+        "name": "Madrid",
+        "full_name": "Madrid, Comunidad de Madrid",
+        "country_code": "ES",
+        "country": "España",
+        "contained_within": [],
+        "bounding_box": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -3.8890049,
+                40.3120713
+              ],
+              [
+                -3.5180102,
+                40.3120713
+              ],
+              [
+                -3.5180102,
+                40.6435181
+              ],
+              [
+                -3.8890049,
+                40.6435181
+              ]
+            ]
+          ]
+        },
+        "attributes": {}
+      },
+      "source": "<a href=\"http://twitter.com/download/android\" rel=\"nofollow\">Twitter for Android</a>",
+      "user_loc": "#el6aLas5 allí di el paso ",
+      "user_tz": "Amsterdam",
+      "user_lang": "es"
+    },
+    {
+      "name": "49carmonajose",
+      "geo": {
+        "type": "Point",
+        "coordinates": [
+          0,
+          0
+        ]
+      },
+      "place": {
+        "id": "206c436ce43a43a3",
+        "url": "https://api.twitter.com/1.1/geo/id/206c436ce43a43a3.json",
+        "place_type": "city",
+        "name": "Madrid",
+        "full_name": "Madrid, Comunidad de Madrid",
+        "country_code": "ES",
+        "country": "España",
+        "contained_within": [],
+        "bounding_box": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -3.8890049,
+                40.3120713
+              ],
+              [
+                -3.5180102,
+                40.3120713
+              ],
+              [
+                -3.5180102,
+                40.6435181
+              ],
+              [
+                -3.8890049,
+                40.6435181
+              ]
+            ]
+          ]
+        },
+        "attributes": {}
+      },
+      "source": "<a href=\"http://twitter.com/download/android\" rel=\"nofollow\">Twitter for Android</a>",
+      "user_loc": "#el6aLas5 allí di el paso ",
+      "user_tz": "Amsterdam",
+      "user_lang": "es"
+    },
+    {
+      "name": "49carmonajose",
+      "geo": {
+        "type": "Point",
+        "coordinates": [
+          0,
+          0
+        ]
+      },
+      "place": {
+        "id": "206c436ce43a43a3",
+        "url": "https://api.twitter.com/1.1/geo/id/206c436ce43a43a3.json",
+        "place_type": "city",
+        "name": "Madrid",
+        "full_name": "Madrid, Comunidad de Madrid",
+        "country_code": "ES",
+        "country": "España",
+        "contained_within": [],
+        "bounding_box": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -3.8890049,
+                40.3120713
+              ],
+              [
+                -3.5180102,
+                40.3120713
+              ],
+              [
+                -3.5180102,
+                40.6435181
+              ],
+              [
+                -3.8890049,
+                40.6435181
+              ]
+            ]
+          ]
+        },
+        "attributes": {}
+      },
+      "source": "<a href=\"http://twitter.com/download/android\" rel=\"nofollow\">Twitter for Android</a>",
+      "user_loc": "#el6aLas5 allí di el paso ",
+      "user_tz": "Amsterdam",
+      "user_lang": "es"
+    },
+    {
+      "name": "49carmonajose",
+      "geo": {
+        "type": "Point",
+        "coordinates": [
+          0,
+          0
+        ]
+      },
+      "place": {
+        "id": "0df6ac4d361d4e0e",
+        "url": "https://api.twitter.com/1.1/geo/id/0df6ac4d361d4e0e.json",
+        "place_type": "city",
+        "name": "Vigo",
+        "full_name": "Vigo, Galicia",
+        "country_code": "ES",
+        "country": "España",
+        "contained_within": [],
+        "bounding_box": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -8.916355,
+                42.1293801
+              ],
+              [
+                -8.6267592,
+                42.1293801
+              ],
+              [
+                -8.6267592,
+                42.2647349
+              ],
+              [
+                -8.916355,
+                42.2647349
+              ]
+            ]
+          ]
+        },
+        "attributes": {}
+      },
+      "source": "<a href=\"http://twitter.com\" rel=\"nofollow\">Twitter Web Client</a>",
+      "user_loc": "#el6aLas5 allí di el paso ",
+      "user_tz": "Amsterdam",
+      "user_lang": "es"
+    },
+    {
+      "name": "grafistica_es",
+      "geo": {
+        "type": "Point",
+        "coordinates": [
+          0,
+          0
+        ]
+      },
+      "place": {
+        "id": "c284b8665bb02ce1",
+        "url": "https://api.twitter.com/1.1/geo/id/c284b8665bb02ce1.json",
+        "place_type": "city",
+        "name": "Soto del Real",
+        "full_name": "Soto del Real, Comunidad de Madrid",
+        "country_code": "ES",
+        "country": "España",
+        "contained_within": [],
+        "bounding_box": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -3.8386208,
+                40.704396
+              ],
+              [
+                -3.7329982,
+                40.704396
+              ],
+              [
+                -3.7329982,
+                40.8136681
+              ],
+              [
+                -3.8386208,
+                40.8136681
+              ]
+            ]
+          ]
+        },
+        "attributes": {}
+      },
+      "source": "<a href=\"http://twitter.com/download/android\" rel=\"nofollow\">Twitter for Android</a>",
+      "user_loc": "Madrid",
+      "user_tz": "Madrid",
+      "user_lang": "es"
+    },
+    {
+      "name": "grafistica_es",
+      "geo": {
+        "type": "Point",
+        "coordinates": [
+          0,
+          0
+        ]
+      },
+      "place": {
+        "id": "c284b8665bb02ce1",
+        "url": "https://api.twitter.com/1.1/geo/id/c284b8665bb02ce1.json",
+        "place_type": "city",
+        "name": "Soto del Real",
+        "full_name": "Soto del Real, Comunidad de Madrid",
+        "country_code": "ES",
+        "country": "España",
+        "contained_within": [],
+        "bounding_box": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -3.8386208,
+                40.704396
+              ],
+              [
+                -3.7329982,
+                40.704396
+              ],
+              [
+                -3.7329982,
+                40.8136681
+              ],
+              [
+                -3.8386208,
+                40.8136681
+              ]
+            ]
+          ]
+        },
+        "attributes": {}
+      },
+      "source": "<a href=\"http://twitter.com/download/android\" rel=\"nofollow\">Twitter for Android</a>",
+      "user_loc": "Madrid",
+      "user_tz": "Madrid",
+      "user_lang": "es"
+    },
+    {
+      "name": "grafistica_es",
+      "geo": {
+        "type": "Point",
+        "coordinates": [
+          0,
+          0
+        ]
+      },
+      "place": {
+        "id": "c284b8665bb02ce1",
+        "url": "https://api.twitter.com/1.1/geo/id/c284b8665bb02ce1.json",
+        "place_type": "city",
+        "name": "Soto del Real",
+        "full_name": "Soto del Real, Comunidad de Madrid",
+        "country_code": "ES",
+        "country": "España",
+        "contained_within": [],
+        "bounding_box": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -3.8386208,
+                40.704396
+              ],
+              [
+                -3.7329982,
+                40.704396
+              ],
+              [
+                -3.7329982,
+                40.8136681
+              ],
+              [
+                -3.8386208,
+                40.8136681
+              ]
+            ]
+          ]
+        },
+        "attributes": {}
+      },
+      "source": "<a href=\"http://twitter.com/download/android\" rel=\"nofollow\">Twitter for Android</a>",
+      "user_loc": "Madrid",
+      "user_tz": "Madrid",
+      "user_lang": "es"
+    },
+    {
+      "name": "grafistica_es",
+      "geo": {
+        "type": "Point",
+        "coordinates": [
+          0,
+          0
+        ]
+      },
+      "place": {
+        "id": "c284b8665bb02ce1",
+        "url": "https://api.twitter.com/1.1/geo/id/c284b8665bb02ce1.json",
+        "place_type": "city",
+        "name": "Soto del Real",
+        "full_name": "Soto del Real, Comunidad de Madrid",
+        "country_code": "ES",
+        "country": "España",
+        "contained_within": [],
+        "bounding_box": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -3.8386208,
+                40.704396
+              ],
+              [
+                -3.7329982,
+                40.704396
+              ],
+              [
+                -3.7329982,
+                40.8136681
+              ],
+              [
+                -3.8386208,
+                40.8136681
+              ]
+            ]
+          ]
+        },
+        "attributes": {}
+      },
+      "source": "<a href=\"http://twitter.com/download/android\" rel=\"nofollow\">Twitter for Android</a>",
+      "user_loc": "Madrid",
+      "user_tz": "Madrid",
+      "user_lang": "es"
+    },
+    {
+      "name": "49carmonajose",
+      "geo": {
+        "type": "Point",
+        "coordinates": [
+          0,
+          0
+        ]
+      },
+      "place": {
+        "id": "206c436ce43a43a3",
+        "url": "https://api.twitter.com/1.1/geo/id/206c436ce43a43a3.json",
+        "place_type": "city",
+        "name": "Madrid",
+        "full_name": "Madrid, Comunidad de Madrid",
+        "country_code": "ES",
+        "country": "España",
+        "contained_within": [],
+        "bounding_box": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -3.8890049,
+                40.3120713
+              ],
+              [
+                -3.5180102,
+                40.3120713
+              ],
+              [
+                -3.5180102,
+                40.6435181
+              ],
+              [
+                -3.8890049,
+                40.6435181
+              ]
+            ]
+          ]
+        },
+        "attributes": {}
+      },
+      "source": "<a href=\"http://twitter.com/download/android\" rel=\"nofollow\">Twitter for Android</a>",
+      "user_loc": "#el6aLas5 allí di el paso ",
+      "user_tz": "Amsterdam",
+      "user_lang": "es"
+    },
+    {
+      "name": "49carmonajose",
+      "geo": {
+        "type": "Point",
+        "coordinates": [
+          0,
+          0
+        ]
+      },
+      "place": {
+        "id": "206c436ce43a43a3",
+        "url": "https://api.twitter.com/1.1/geo/id/206c436ce43a43a3.json",
+        "place_type": "city",
+        "name": "Madrid",
+        "full_name": "Madrid, Comunidad de Madrid",
+        "country_code": "ES",
+        "country": "España",
+        "contained_within": [],
+        "bounding_box": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -3.8890049,
+                40.3120713
+              ],
+              [
+                -3.5180102,
+                40.3120713
+              ],
+              [
+                -3.5180102,
+                40.6435181
+              ],
+              [
+                -3.8890049,
+                40.6435181
+              ]
+            ]
+          ]
+        },
+        "attributes": {}
+      },
+      "source": "<a href=\"http://twitter.com/download/android\" rel=\"nofollow\">Twitter for Android</a>",
+      "user_loc": "#el6aLas5 allí di el paso ",
+      "user_tz": "Amsterdam",
+      "user_lang": "es"
+    },
+    {
+      "name": "49carmonajose",
+      "geo": {
+        "type": "Point",
+        "coordinates": [
+          0,
+          0
+        ]
+      },
+      "place": {
+        "id": "206c436ce43a43a3",
+        "url": "https://api.twitter.com/1.1/geo/id/206c436ce43a43a3.json",
+        "place_type": "city",
+        "name": "Madrid",
+        "full_name": "Madrid, Comunidad de Madrid",
+        "country_code": "ES",
+        "country": "España",
+        "contained_within": [],
+        "bounding_box": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -3.8890049,
+                40.3120713
+              ],
+              [
+                -3.5180102,
+                40.3120713
+              ],
+              [
+                -3.5180102,
+                40.6435181
+              ],
+              [
+                -3.8890049,
+                40.6435181
+              ]
+            ]
+          ]
+        },
+        "attributes": {}
+      },
+      "source": "<a href=\"http://twitter.com/download/android\" rel=\"nofollow\">Twitter for Android</a>",
+      "user_loc": "#el6aLas5 allí di el paso ",
+      "user_tz": "Amsterdam",
+      "user_lang": "es"
+    },
+    {
+      "name": "49carmonajose",
+      "geo": {
+        "type": "Point",
+        "coordinates": [
+          0,
+          0
+        ]
+      },
+      "place": {
+        "id": "0df6ac4d361d4e0e",
+        "url": "https://api.twitter.com/1.1/geo/id/0df6ac4d361d4e0e.json",
+        "place_type": "city",
+        "name": "Vigo",
+        "full_name": "Vigo, Galicia",
+        "country_code": "ES",
+        "country": "España",
+        "contained_within": [],
+        "bounding_box": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -8.916355,
+                42.1293801
+              ],
+              [
+                -8.6267592,
+                42.1293801
+              ],
+              [
+                -8.6267592,
+                42.2647349
+              ],
+              [
+                -8.916355,
+                42.2647349
+              ]
+            ]
+          ]
+        },
+        "attributes": {}
+      },
+      "source": "<a href=\"http://twitter.com\" rel=\"nofollow\">Twitter Web Client</a>",
+      "user_loc": "#el6aLas5 allí di el paso ",
+      "user_tz": "Amsterdam",
+      "user_lang": "es"
+    },
+    {
+      "name": "grafistica_es",
+      "geo": {
+        "type": "Point",
+        "coordinates": [
+          0,
+          0
+        ]
+      },
+      "place": {
+        "id": "c284b8665bb02ce1",
+        "url": "https://api.twitter.com/1.1/geo/id/c284b8665bb02ce1.json",
+        "place_type": "city",
+        "name": "Soto del Real",
+        "full_name": "Soto del Real, Comunidad de Madrid",
+        "country_code": "ES",
+        "country": "España",
+        "contained_within": [],
+        "bounding_box": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -3.8386208,
+                40.704396
+              ],
+              [
+                -3.7329982,
+                40.704396
+              ],
+              [
+                -3.7329982,
+                40.8136681
+              ],
+              [
+                -3.8386208,
+                40.8136681
+              ]
+            ]
+          ]
+        },
+        "attributes": {}
+      },
+      "source": "<a href=\"http://twitter.com/download/android\" rel=\"nofollow\">Twitter for Android</a>",
+      "user_loc": "Madrid",
+      "user_tz": "Madrid",
+      "user_lang": "es"
+    },
+    {
+      "name": "grafistica_es",
+      "geo": {
+        "type": "Point",
+        "coordinates": [
+          0,
+          0
+        ]
+      },
+      "place": {
+        "id": "c284b8665bb02ce1",
+        "url": "https://api.twitter.com/1.1/geo/id/c284b8665bb02ce1.json",
+        "place_type": "city",
+        "name": "Soto del Real",
+        "full_name": "Soto del Real, Comunidad de Madrid",
+        "country_code": "ES",
+        "country": "España",
+        "contained_within": [],
+        "bounding_box": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -3.8386208,
+                40.704396
+              ],
+              [
+                -3.7329982,
+                40.704396
+              ],
+              [
+                -3.7329982,
+                40.8136681
+              ],
+              [
+                -3.8386208,
+                40.8136681
+              ]
+            ]
+          ]
+        },
+        "attributes": {}
+      },
+      "source": "<a href=\"http://twitter.com/download/android\" rel=\"nofollow\">Twitter for Android</a>",
+      "user_loc": "Madrid",
+      "user_tz": "Madrid",
+      "user_lang": "es"
+    },
+    {
+      "name": "grafistica_es",
+      "geo": {
+        "type": "Point",
+        "coordinates": [
+          0,
+          0
+        ]
+      },
+      "place": {
+        "id": "c284b8665bb02ce1",
+        "url": "https://api.twitter.com/1.1/geo/id/c284b8665bb02ce1.json",
+        "place_type": "city",
+        "name": "Soto del Real",
+        "full_name": "Soto del Real, Comunidad de Madrid",
+        "country_code": "ES",
+        "country": "España",
+        "contained_within": [],
+        "bounding_box": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -3.8386208,
+                40.704396
+              ],
+              [
+                -3.7329982,
+                40.704396
+              ],
+              [
+                -3.7329982,
+                40.8136681
+              ],
+              [
+                -3.8386208,
+                40.8136681
+              ]
+            ]
+          ]
+        },
+        "attributes": {}
+      },
+      "source": "<a href=\"http://twitter.com/download/android\" rel=\"nofollow\">Twitter for Android</a>",
+      "user_loc": "Madrid",
+      "user_tz": "Madrid",
+      "user_lang": "es"
+    },
+    {
+      "name": "grafistica_es",
+      "geo": {
+        "type": "Point",
+        "coordinates": [
+          0,
+          0
+        ]
+      },
+      "place": {
+        "id": "c284b8665bb02ce1",
+        "url": "https://api.twitter.com/1.1/geo/id/c284b8665bb02ce1.json",
+        "place_type": "city",
+        "name": "Soto del Real",
+        "full_name": "Soto del Real, Comunidad de Madrid",
+        "country_code": "ES",
+        "country": "España",
+        "contained_within": [],
+        "bounding_box": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -3.8386208,
+                40.704396
+              ],
+              [
+                -3.7329982,
+                40.704396
+              ],
+              [
+                -3.7329982,
+                40.8136681
+              ],
+              [
+                -3.8386208,
+                40.8136681
+              ]
+            ]
+          ]
+        },
+        "attributes": {}
+      },
+      "source": "<a href=\"http://twitter.com/download/android\" rel=\"nofollow\">Twitter for Android</a>",
+      "user_loc": "Madrid",
+      "user_tz": "Madrid",
+      "user_lang": "es"
+    },
+    {
+      "name": "49carmonajose",
+      "geo": {
+        "type": "Point",
+        "coordinates": [
+          0,
+          0
+        ]
+      },
+      "place": {
+        "id": "206c436ce43a43a3",
+        "url": "https://api.twitter.com/1.1/geo/id/206c436ce43a43a3.json",
+        "place_type": "city",
+        "name": "Madrid",
+        "full_name": "Madrid, Comunidad de Madrid",
+        "country_code": "ES",
+        "country": "España",
+        "contained_within": [],
+        "bounding_box": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -3.8890049,
+                40.3120713
+              ],
+              [
+                -3.5180102,
+                40.3120713
+              ],
+              [
+                -3.5180102,
+                40.6435181
+              ],
+              [
+                -3.8890049,
+                40.6435181
+              ]
+            ]
+          ]
+        },
+        "attributes": {}
+      },
+      "source": "<a href=\"http://twitter.com/download/android\" rel=\"nofollow\">Twitter for Android</a>",
+      "user_loc": "#el6aLas5 allí di el paso ",
+      "user_tz": "Amsterdam",
+      "user_lang": "es"
+    },
+    {
+      "name": "49carmonajose",
+      "geo": {
+        "type": "Point",
+        "coordinates": [
+          0,
+          0
+        ]
+      },
+      "place": {
+        "id": "206c436ce43a43a3",
+        "url": "https://api.twitter.com/1.1/geo/id/206c436ce43a43a3.json",
+        "place_type": "city",
+        "name": "Madrid",
+        "full_name": "Madrid, Comunidad de Madrid",
+        "country_code": "ES",
+        "country": "España",
+        "contained_within": [],
+        "bounding_box": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -3.8890049,
+                40.3120713
+              ],
+              [
+                -3.5180102,
+                40.3120713
+              ],
+              [
+                -3.5180102,
+                40.6435181
+              ],
+              [
+                -3.8890049,
+                40.6435181
+              ]
+            ]
+          ]
+        },
+        "attributes": {}
+      },
+      "source": "<a href=\"http://twitter.com/download/android\" rel=\"nofollow\">Twitter for Android</a>",
+      "user_loc": "#el6aLas5 allí di el paso ",
+      "user_tz": "Amsterdam",
+      "user_lang": "es"
+    },
+    {
+      "name": "49carmonajose",
+      "geo": {
+        "type": "Point",
+        "coordinates": [
+          0,
+          0
+        ]
+      },
+      "place": {
+        "id": "206c436ce43a43a3",
+        "url": "https://api.twitter.com/1.1/geo/id/206c436ce43a43a3.json",
+        "place_type": "city",
+        "name": "Madrid",
+        "full_name": "Madrid, Comunidad de Madrid",
+        "country_code": "ES",
+        "country": "España",
+        "contained_within": [],
+        "bounding_box": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -3.8890049,
+                40.3120713
+              ],
+              [
+                -3.5180102,
+                40.3120713
+              ],
+              [
+                -3.5180102,
+                40.6435181
+              ],
+              [
+                -3.8890049,
+                40.6435181
+              ]
+            ]
+          ]
+        },
+        "attributes": {}
+      },
+      "source": "<a href=\"http://twitter.com/download/android\" rel=\"nofollow\">Twitter for Android</a>",
+      "user_loc": "#el6aLas5 allí di el paso ",
+      "user_tz": "Amsterdam",
+      "user_lang": "es"
+    },
+    {
+      "name": "49carmonajose",
+      "geo": {
+        "type": "Point",
+        "coordinates": [
+          0,
+          0
+        ]
+      },
+      "place": {
+        "id": "0df6ac4d361d4e0e",
+        "url": "https://api.twitter.com/1.1/geo/id/0df6ac4d361d4e0e.json",
+        "place_type": "city",
+        "name": "Vigo",
+        "full_name": "Vigo, Galicia",
+        "country_code": "ES",
+        "country": "España",
+        "contained_within": [],
+        "bounding_box": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -8.916355,
+                42.1293801
+              ],
+              [
+                -8.6267592,
+                42.1293801
+              ],
+              [
+                -8.6267592,
+                42.2647349
+              ],
+              [
+                -8.916355,
+                42.2647349
+              ]
+            ]
+          ]
+        },
+        "attributes": {}
+      },
+      "source": "<a href=\"http://twitter.com\" rel=\"nofollow\">Twitter Web Client</a>",
+      "user_loc": "#el6aLas5 allí di el paso ",
+      "user_tz": "Amsterdam",
+      "user_lang": "es"
+    },
+    {
+      "name": "grafistica_es",
+      "geo": {
+        "type": "Point",
+        "coordinates": [
+          0,
+          0
+        ]
+      },
+      "place": {
+        "id": "c284b8665bb02ce1",
+        "url": "https://api.twitter.com/1.1/geo/id/c284b8665bb02ce1.json",
+        "place_type": "city",
+        "name": "Soto del Real",
+        "full_name": "Soto del Real, Comunidad de Madrid",
+        "country_code": "ES",
+        "country": "España",
+        "contained_within": [],
+        "bounding_box": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -3.8386208,
+                40.704396
+              ],
+              [
+                -3.7329982,
+                40.704396
+              ],
+              [
+                -3.7329982,
+                40.8136681
+              ],
+              [
+                -3.8386208,
+                40.8136681
+              ]
+            ]
+          ]
+        },
+        "attributes": {}
+      },
+      "source": "<a href=\"http://twitter.com/download/android\" rel=\"nofollow\">Twitter for Android</a>",
+      "user_loc": "Madrid",
+      "user_tz": "Madrid",
+      "user_lang": "es"
+    },
+    {
+      "name": "grafistica_es",
+      "geo": {
+        "type": "Point",
+        "coordinates": [
+          0,
+          0
+        ]
+      },
+      "place": {
+        "id": "c284b8665bb02ce1",
+        "url": "https://api.twitter.com/1.1/geo/id/c284b8665bb02ce1.json",
+        "place_type": "city",
+        "name": "Soto del Real",
+        "full_name": "Soto del Real, Comunidad de Madrid",
+        "country_code": "ES",
+        "country": "España",
+        "contained_within": [],
+        "bounding_box": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -3.8386208,
+                40.704396
+              ],
+              [
+                -3.7329982,
+                40.704396
+              ],
+              [
+                -3.7329982,
+                40.8136681
+              ],
+              [
+                -3.8386208,
+                40.8136681
+              ]
+            ]
+          ]
+        },
+        "attributes": {}
+      },
+      "source": "<a href=\"http://twitter.com/download/android\" rel=\"nofollow\">Twitter for Android</a>",
+      "user_loc": "Madrid",
+      "user_tz": "Madrid",
+      "user_lang": "es"
+    },
+    {
+      "name": "grafistica_es",
+      "geo": {
+        "type": "Point",
+        "coordinates": [
+          0,
+          0
+        ]
+      },
+      "place": {
+        "id": "c284b8665bb02ce1",
+        "url": "https://api.twitter.com/1.1/geo/id/c284b8665bb02ce1.json",
+        "place_type": "city",
+        "name": "Soto del Real",
+        "full_name": "Soto del Real, Comunidad de Madrid",
+        "country_code": "ES",
+        "country": "España",
+        "contained_within": [],
+        "bounding_box": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -3.8386208,
+                40.704396
+              ],
+              [
+                -3.7329982,
+                40.704396
+              ],
+              [
+                -3.7329982,
+                40.8136681
+              ],
+              [
+                -3.8386208,
+                40.8136681
+              ]
+            ]
+          ]
+        },
+        "attributes": {}
+      },
+      "source": "<a href=\"http://twitter.com/download/android\" rel=\"nofollow\">Twitter for Android</a>",
+      "user_loc": "Madrid",
+      "user_tz": "Madrid",
+      "user_lang": "es"
+    },
+    {
+      "name": "grafistica_es",
+      "geo": {
+        "type": "Point",
+        "coordinates": [
+          0,
+          0
+        ]
+      },
+      "place": {
+        "id": "c284b8665bb02ce1",
+        "url": "https://api.twitter.com/1.1/geo/id/c284b8665bb02ce1.json",
+        "place_type": "city",
+        "name": "Soto del Real",
+        "full_name": "Soto del Real, Comunidad de Madrid",
+        "country_code": "ES",
+        "country": "España",
+        "contained_within": [],
+        "bounding_box": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -3.8386208,
+                40.704396
+              ],
+              [
+                -3.7329982,
+                40.704396
+              ],
+              [
+                -3.7329982,
+                40.8136681
+              ],
+              [
+                -3.8386208,
+                40.8136681
+              ]
+            ]
+          ]
+        },
+        "attributes": {}
+      },
+      "source": "<a href=\"http://twitter.com/download/android\" rel=\"nofollow\">Twitter for Android</a>",
+      "user_loc": "Madrid",
+      "user_tz": "Madrid",
+      "user_lang": "es"
+    },
+    {
+      "name": "49carmonajose",
+      "geo": {
+        "type": "Point",
+        "coordinates": [
+          0,
+          0
+        ]
+      },
+      "place": {
+        "id": "206c436ce43a43a3",
+        "url": "https://api.twitter.com/1.1/geo/id/206c436ce43a43a3.json",
+        "place_type": "city",
+        "name": "Madrid",
+        "full_name": "Madrid, Comunidad de Madrid",
+        "country_code": "ES",
+        "country": "España",
+        "contained_within": [],
+        "bounding_box": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -3.8890049,
+                40.3120713
+              ],
+              [
+                -3.5180102,
+                40.3120713
+              ],
+              [
+                -3.5180102,
+                40.6435181
+              ],
+              [
+                -3.8890049,
+                40.6435181
+              ]
+            ]
+          ]
+        },
+        "attributes": {}
+      },
+      "source": "<a href=\"http://twitter.com/download/android\" rel=\"nofollow\">Twitter for Android</a>",
+      "user_loc": "#el6aLas5 allí di el paso ",
+      "user_tz": "Amsterdam",
+      "user_lang": "es"
+    },
+    {
+      "name": "49carmonajose",
+      "geo": {
+        "type": "Point",
+        "coordinates": [
+          0,
+          0
+        ]
+      },
+      "place": {
+        "id": "206c436ce43a43a3",
+        "url": "https://api.twitter.com/1.1/geo/id/206c436ce43a43a3.json",
+        "place_type": "city",
+        "name": "Madrid",
+        "full_name": "Madrid, Comunidad de Madrid",
+        "country_code": "ES",
+        "country": "España",
+        "contained_within": [],
+        "bounding_box": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -3.8890049,
+                40.3120713
+              ],
+              [
+                -3.5180102,
+                40.3120713
+              ],
+              [
+                -3.5180102,
+                40.6435181
+              ],
+              [
+                -3.8890049,
+                40.6435181
+              ]
+            ]
+          ]
+        },
+        "attributes": {}
+      },
+      "source": "<a href=\"http://twitter.com/download/android\" rel=\"nofollow\">Twitter for Android</a>",
+      "user_loc": "#el6aLas5 allí di el paso ",
+      "user_tz": "Amsterdam",
+      "user_lang": "es"
+    },
+    {
+      "name": "49carmonajose",
+      "geo": {
+        "type": "Point",
+        "coordinates": [
+          0,
+          0
+        ]
+      },
+      "place": {
+        "id": "206c436ce43a43a3",
+        "url": "https://api.twitter.com/1.1/geo/id/206c436ce43a43a3.json",
+        "place_type": "city",
+        "name": "Madrid",
+        "full_name": "Madrid, Comunidad de Madrid",
+        "country_code": "ES",
+        "country": "España",
+        "contained_within": [],
+        "bounding_box": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -3.8890049,
+                40.3120713
+              ],
+              [
+                -3.5180102,
+                40.3120713
+              ],
+              [
+                -3.5180102,
+                40.6435181
+              ],
+              [
+                -3.8890049,
+                40.6435181
+              ]
+            ]
+          ]
+        },
+        "attributes": {}
+      },
+      "source": "<a href=\"http://twitter.com/download/android\" rel=\"nofollow\">Twitter for Android</a>",
+      "user_loc": "#el6aLas5 allí di el paso ",
+      "user_tz": "Amsterdam",
+      "user_lang": "es"
+    },
+    {
+      "name": "49carmonajose",
+      "geo": {
+        "type": "Point",
+        "coordinates": [
+          0,
+          0
+        ]
+      },
+      "place": {
+        "id": "0df6ac4d361d4e0e",
+        "url": "https://api.twitter.com/1.1/geo/id/0df6ac4d361d4e0e.json",
+        "place_type": "city",
+        "name": "Vigo",
+        "full_name": "Vigo, Galicia",
+        "country_code": "ES",
+        "country": "España",
+        "contained_within": [],
+        "bounding_box": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -8.916355,
+                42.1293801
+              ],
+              [
+                -8.6267592,
+                42.1293801
+              ],
+              [
+                -8.6267592,
+                42.2647349
+              ],
+              [
+                -8.916355,
+                42.2647349
+              ]
+            ]
+          ]
+        },
+        "attributes": {}
+      },
+      "source": "<a href=\"http://twitter.com\" rel=\"nofollow\">Twitter Web Client</a>",
+      "user_loc": "#el6aLas5 allí di el paso ",
+      "user_tz": "Amsterdam",
+      "user_lang": "es"
+    },
+    {
+      "name": "grafistica_es",
+      "geo": {
+        "type": "Point",
+        "coordinates": [
+          0,
+          0
+        ]
+      },
+      "place": {
+        "id": "c284b8665bb02ce1",
+        "url": "https://api.twitter.com/1.1/geo/id/c284b8665bb02ce1.json",
+        "place_type": "city",
+        "name": "Soto del Real",
+        "full_name": "Soto del Real, Comunidad de Madrid",
+        "country_code": "ES",
+        "country": "España",
+        "contained_within": [],
+        "bounding_box": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -3.8386208,
+                40.704396
+              ],
+              [
+                -3.7329982,
+                40.704396
+              ],
+              [
+                -3.7329982,
+                40.8136681
+              ],
+              [
+                -3.8386208,
+                40.8136681
+              ]
+            ]
+          ]
+        },
+        "attributes": {}
+      },
+      "source": "<a href=\"http://twitter.com/download/android\" rel=\"nofollow\">Twitter for Android</a>",
+      "user_loc": "Madrid",
+      "user_tz": "Madrid",
+      "user_lang": "es"
+    },
+    {
+      "name": "grafistica_es",
+      "geo": {
+        "type": "Point",
+        "coordinates": [
+          0,
+          0
+        ]
+      },
+      "place": {
+        "id": "c284b8665bb02ce1",
+        "url": "https://api.twitter.com/1.1/geo/id/c284b8665bb02ce1.json",
+        "place_type": "city",
+        "name": "Soto del Real",
+        "full_name": "Soto del Real, Comunidad de Madrid",
+        "country_code": "ES",
+        "country": "España",
+        "contained_within": [],
+        "bounding_box": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -3.8386208,
+                40.704396
+              ],
+              [
+                -3.7329982,
+                40.704396
+              ],
+              [
+                -3.7329982,
+                40.8136681
+              ],
+              [
+                -3.8386208,
+                40.8136681
+              ]
+            ]
+          ]
+        },
+        "attributes": {}
+      },
+      "source": "<a href=\"http://twitter.com/download/android\" rel=\"nofollow\">Twitter for Android</a>",
+      "user_loc": "Madrid",
+      "user_tz": "Madrid",
+      "user_lang": "es"
+    },
+    {
+      "name": "grafistica_es",
+      "geo": {
+        "type": "Point",
+        "coordinates": [
+          0,
+          0
+        ]
+      },
+      "place": {
+        "id": "c284b8665bb02ce1",
+        "url": "https://api.twitter.com/1.1/geo/id/c284b8665bb02ce1.json",
+        "place_type": "city",
+        "name": "Soto del Real",
+        "full_name": "Soto del Real, Comunidad de Madrid",
+        "country_code": "ES",
+        "country": "España",
+        "contained_within": [],
+        "bounding_box": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -3.8386208,
+                40.704396
+              ],
+              [
+                -3.7329982,
+                40.704396
+              ],
+              [
+                -3.7329982,
+                40.8136681
+              ],
+              [
+                -3.8386208,
+                40.8136681
+              ]
+            ]
+          ]
+        },
+        "attributes": {}
+      },
+      "source": "<a href=\"http://twitter.com/download/android\" rel=\"nofollow\">Twitter for Android</a>",
+      "user_loc": "Madrid",
+      "user_tz": "Madrid",
+      "user_lang": "es"
+    },
+    {
+      "name": "grafistica_es",
+      "geo": {
+        "type": "Point",
+        "coordinates": [
+          0,
+          0
+        ]
+      },
+      "place": {
+        "id": "c284b8665bb02ce1",
+        "url": "https://api.twitter.com/1.1/geo/id/c284b8665bb02ce1.json",
+        "place_type": "city",
+        "name": "Soto del Real",
+        "full_name": "Soto del Real, Comunidad de Madrid",
+        "country_code": "ES",
+        "country": "España",
+        "contained_within": [],
+        "bounding_box": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -3.8386208,
+                40.704396
+              ],
+              [
+                -3.7329982,
+                40.704396
+              ],
+              [
+                -3.7329982,
+                40.8136681
+              ],
+              [
+                -3.8386208,
+                40.8136681
+              ]
+            ]
+          ]
+        },
+        "attributes": {}
+      },
+      "source": "<a href=\"http://twitter.com/download/android\" rel=\"nofollow\">Twitter for Android</a>",
+      "user_loc": "Madrid",
+      "user_tz": "Madrid",
+      "user_lang": "es"
+    },
+    {
+      "name": "49carmonajose",
+      "geo": {
+        "type": "Point",
+        "coordinates": [
+          0,
+          0
+        ]
+      },
+      "place": {
+        "id": "206c436ce43a43a3",
+        "url": "https://api.twitter.com/1.1/geo/id/206c436ce43a43a3.json",
+        "place_type": "city",
+        "name": "Madrid",
+        "full_name": "Madrid, Comunidad de Madrid",
+        "country_code": "ES",
+        "country": "España",
+        "contained_within": [],
+        "bounding_box": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -3.8890049,
+                40.3120713
+              ],
+              [
+                -3.5180102,
+                40.3120713
+              ],
+              [
+                -3.5180102,
+                40.6435181
+              ],
+              [
+                -3.8890049,
+                40.6435181
+              ]
+            ]
+          ]
+        },
+        "attributes": {}
+      },
+      "source": "<a href=\"http://twitter.com/download/android\" rel=\"nofollow\">Twitter for Android</a>",
+      "user_loc": "#el6aLas5 allí di el paso ",
+      "user_tz": "Amsterdam",
+      "user_lang": "es"
+    },
+    {
+      "name": "49carmonajose",
+      "geo": {
+        "type": "Point",
+        "coordinates": [
+          0,
+          0
+        ]
+      },
+      "place": {
+        "id": "206c436ce43a43a3",
+        "url": "https://api.twitter.com/1.1/geo/id/206c436ce43a43a3.json",
+        "place_type": "city",
+        "name": "Madrid",
+        "full_name": "Madrid, Comunidad de Madrid",
+        "country_code": "ES",
+        "country": "España",
+        "contained_within": [],
+        "bounding_box": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -3.8890049,
+                40.3120713
+              ],
+              [
+                -3.5180102,
+                40.3120713
+              ],
+              [
+                -3.5180102,
+                40.6435181
+              ],
+              [
+                -3.8890049,
+                40.6435181
+              ]
+            ]
+          ]
+        },
+        "attributes": {}
+      },
+      "source": "<a href=\"http://twitter.com/download/android\" rel=\"nofollow\">Twitter for Android</a>",
+      "user_loc": "#el6aLas5 allí di el paso ",
+      "user_tz": "Amsterdam",
+      "user_lang": "es"
+    },
+    {
+      "name": "49carmonajose",
+      "geo": {
+        "type": "Point",
+        "coordinates": [
+          0,
+          0
+        ]
+      },
+      "place": {
+        "id": "206c436ce43a43a3",
+        "url": "https://api.twitter.com/1.1/geo/id/206c436ce43a43a3.json",
+        "place_type": "city",
+        "name": "Madrid",
+        "full_name": "Madrid, Comunidad de Madrid",
+        "country_code": "ES",
+        "country": "España",
+        "contained_within": [],
+        "bounding_box": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -3.8890049,
+                40.3120713
+              ],
+              [
+                -3.5180102,
+                40.3120713
+              ],
+              [
+                -3.5180102,
+                40.6435181
+              ],
+              [
+                -3.8890049,
+                40.6435181
+              ]
+            ]
+          ]
+        },
+        "attributes": {}
+      },
+      "source": "<a href=\"http://twitter.com/download/android\" rel=\"nofollow\">Twitter for Android</a>",
+      "user_loc": "#el6aLas5 allí di el paso ",
+      "user_tz": "Amsterdam",
+      "user_lang": "es"
+    },
+    {
+      "name": "49carmonajose",
+      "geo": {
+        "type": "Point",
+        "coordinates": [
+          0,
+          0
+        ]
+      },
+      "place": {
+        "id": "0df6ac4d361d4e0e",
+        "url": "https://api.twitter.com/1.1/geo/id/0df6ac4d361d4e0e.json",
+        "place_type": "city",
+        "name": "Vigo",
+        "full_name": "Vigo, Galicia",
+        "country_code": "ES",
+        "country": "España",
+        "contained_within": [],
+        "bounding_box": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -8.916355,
+                42.1293801
+              ],
+              [
+                -8.6267592,
+                42.1293801
+              ],
+              [
+                -8.6267592,
+                42.2647349
+              ],
+              [
+                -8.916355,
+                42.2647349
+              ]
+            ]
+          ]
+        },
+        "attributes": {}
+      },
+      "source": "<a href=\"http://twitter.com\" rel=\"nofollow\">Twitter Web Client</a>",
+      "user_loc": "#el6aLas5 allí di el paso ",
+      "user_tz": "Amsterdam",
+      "user_lang": "es"
+    },
+    {
+      "name": "grafistica_es",
+      "geo": {
+        "type": "Point",
+        "coordinates": [
+          0,
+          0
+        ]
+      },
+      "place": {
+        "id": "c284b8665bb02ce1",
+        "url": "https://api.twitter.com/1.1/geo/id/c284b8665bb02ce1.json",
+        "place_type": "city",
+        "name": "Soto del Real",
+        "full_name": "Soto del Real, Comunidad de Madrid",
+        "country_code": "ES",
+        "country": "España",
+        "contained_within": [],
+        "bounding_box": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -3.8386208,
+                40.704396
+              ],
+              [
+                -3.7329982,
+                40.704396
+              ],
+              [
+                -3.7329982,
+                40.8136681
+              ],
+              [
+                -3.8386208,
+                40.8136681
+              ]
+            ]
+          ]
+        },
+        "attributes": {}
+      },
+      "source": "<a href=\"http://twitter.com/download/android\" rel=\"nofollow\">Twitter for Android</a>",
+      "user_loc": "Madrid",
+      "user_tz": "Madrid",
+      "user_lang": "es"
+    },
+    {
+      "name": "grafistica_es",
+      "geo": {
+        "type": "Point",
+        "coordinates": [
+          0,
+          0
+        ]
+      },
+      "place": {
+        "id": "c284b8665bb02ce1",
+        "url": "https://api.twitter.com/1.1/geo/id/c284b8665bb02ce1.json",
+        "place_type": "city",
+        "name": "Soto del Real",
+        "full_name": "Soto del Real, Comunidad de Madrid",
+        "country_code": "ES",
+        "country": "España",
+        "contained_within": [],
+        "bounding_box": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -3.8386208,
+                40.704396
+              ],
+              [
+                -3.7329982,
+                40.704396
+              ],
+              [
+                -3.7329982,
+                40.8136681
+              ],
+              [
+                -3.8386208,
+                40.8136681
+              ]
+            ]
+          ]
+        },
+        "attributes": {}
+      },
+      "source": "<a href=\"http://twitter.com/download/android\" rel=\"nofollow\">Twitter for Android</a>",
+      "user_loc": "Madrid",
+      "user_tz": "Madrid",
+      "user_lang": "es"
+    },
+    {
+      "name": "grafistica_es",
+      "geo": {
+        "type": "Point",
+        "coordinates": [
+          0,
+          0
+        ]
+      },
+      "place": {
+        "id": "c284b8665bb02ce1",
+        "url": "https://api.twitter.com/1.1/geo/id/c284b8665bb02ce1.json",
+        "place_type": "city",
+        "name": "Soto del Real",
+        "full_name": "Soto del Real, Comunidad de Madrid",
+        "country_code": "ES",
+        "country": "España",
+        "contained_within": [],
+        "bounding_box": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -3.8386208,
+                40.704396
+              ],
+              [
+                -3.7329982,
+                40.704396
+              ],
+              [
+                -3.7329982,
+                40.8136681
+              ],
+              [
+                -3.8386208,
+                40.8136681
+              ]
+            ]
+          ]
+        },
+        "attributes": {}
+      },
+      "source": "<a href=\"http://twitter.com/download/android\" rel=\"nofollow\">Twitter for Android</a>",
+      "user_loc": "Madrid",
+      "user_tz": "Madrid",
+      "user_lang": "es"
+    },
+    {
+      "name": "grafistica_es",
+      "geo": {
+        "type": "Point",
+        "coordinates": [
+          0,
+          0
+        ]
+      },
+      "place": {
+        "id": "c284b8665bb02ce1",
+        "url": "https://api.twitter.com/1.1/geo/id/c284b8665bb02ce1.json",
+        "place_type": "city",
+        "name": "Soto del Real",
+        "full_name": "Soto del Real, Comunidad de Madrid",
+        "country_code": "ES",
+        "country": "España",
+        "contained_within": [],
+        "bounding_box": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -3.8386208,
+                40.704396
+              ],
+              [
+                -3.7329982,
+                40.704396
+              ],
+              [
+                -3.7329982,
+                40.8136681
+              ],
+              [
+                -3.8386208,
+                40.8136681
+              ]
+            ]
+          ]
+        },
+        "attributes": {}
+      },
+      "source": "<a href=\"http://twitter.com/download/android\" rel=\"nofollow\">Twitter for Android</a>",
+      "user_loc": "Madrid",
+      "user_tz": "Madrid",
+      "user_lang": "es"
+    },
+    {
+      "name": "49carmonajose",
+      "geo": {
+        "type": "Point",
+        "coordinates": [
+          0,
+          0
+        ]
+      },
+      "place": {
+        "id": "206c436ce43a43a3",
+        "url": "https://api.twitter.com/1.1/geo/id/206c436ce43a43a3.json",
+        "place_type": "city",
+        "name": "Madrid",
+        "full_name": "Madrid, Comunidad de Madrid",
+        "country_code": "ES",
+        "country": "España",
+        "contained_within": [],
+        "bounding_box": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -3.8890049,
+                40.3120713
+              ],
+              [
+                -3.5180102,
+                40.3120713
+              ],
+              [
+                -3.5180102,
+                40.6435181
+              ],
+              [
+                -3.8890049,
+                40.6435181
+              ]
+            ]
+          ]
+        },
+        "attributes": {}
+      },
+      "source": "<a href=\"http://twitter.com/download/android\" rel=\"nofollow\">Twitter for Android</a>",
+      "user_loc": "#el6aLas5 allí di el paso ",
+      "user_tz": "Amsterdam",
+      "user_lang": "es"
+    },
+    {
+      "name": "49carmonajose",
+      "geo": {
+        "type": "Point",
+        "coordinates": [
+          0,
+          0
+        ]
+      },
+      "place": {
+        "id": "206c436ce43a43a3",
+        "url": "https://api.twitter.com/1.1/geo/id/206c436ce43a43a3.json",
+        "place_type": "city",
+        "name": "Madrid",
+        "full_name": "Madrid, Comunidad de Madrid",
+        "country_code": "ES",
+        "country": "España",
+        "contained_within": [],
+        "bounding_box": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -3.8890049,
+                40.3120713
+              ],
+              [
+                -3.5180102,
+                40.3120713
+              ],
+              [
+                -3.5180102,
+                40.6435181
+              ],
+              [
+                -3.8890049,
+                40.6435181
+              ]
+            ]
+          ]
+        },
+        "attributes": {}
+      },
+      "source": "<a href=\"http://twitter.com/download/android\" rel=\"nofollow\">Twitter for Android</a>",
+      "user_loc": "#el6aLas5 allí di el paso ",
+      "user_tz": "Amsterdam",
+      "user_lang": "es"
+    },
+    {
+      "name": "49carmonajose",
+      "geo": {
+        "type": "Point",
+        "coordinates": [
+          0,
+          0
+        ]
+      },
+      "place": {
+        "id": "206c436ce43a43a3",
+        "url": "https://api.twitter.com/1.1/geo/id/206c436ce43a43a3.json",
+        "place_type": "city",
+        "name": "Madrid",
+        "full_name": "Madrid, Comunidad de Madrid",
+        "country_code": "ES",
+        "country": "España",
+        "contained_within": [],
+        "bounding_box": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -3.8890049,
+                40.3120713
+              ],
+              [
+                -3.5180102,
+                40.3120713
+              ],
+              [
+                -3.5180102,
+                40.6435181
+              ],
+              [
+                -3.8890049,
+                40.6435181
+              ]
+            ]
+          ]
+        },
+        "attributes": {}
+      },
+      "source": "<a href=\"http://twitter.com/download/android\" rel=\"nofollow\">Twitter for Android</a>",
+      "user_loc": "#el6aLas5 allí di el paso ",
+      "user_tz": "Amsterdam",
+      "user_lang": "es"
+    },
+    {
+      "name": "49carmonajose",
+      "geo": {
+        "type": "Point",
+        "coordinates": [
+          0,
+          0
+        ]
+      },
+      "place": {
+        "id": "0df6ac4d361d4e0e",
+        "url": "https://api.twitter.com/1.1/geo/id/0df6ac4d361d4e0e.json",
+        "place_type": "city",
+        "name": "Vigo",
+        "full_name": "Vigo, Galicia",
+        "country_code": "ES",
+        "country": "España",
+        "contained_within": [],
+        "bounding_box": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -8.916355,
+                42.1293801
+              ],
+              [
+                -8.6267592,
+                42.1293801
+              ],
+              [
+                -8.6267592,
+                42.2647349
+              ],
+              [
+                -8.916355,
+                42.2647349
+              ]
+            ]
+          ]
+        },
+        "attributes": {}
+      },
+      "source": "<a href=\"http://twitter.com\" rel=\"nofollow\">Twitter Web Client</a>",
+      "user_loc": "#el6aLas5 allí di el paso ",
+      "user_tz": "Amsterdam",
+      "user_lang": "es"
+    },
+    {
+      "name": "grafistica_es",
+      "geo": {
+        "type": "Point",
+        "coordinates": [
+          0,
+          0
+        ]
+      },
+      "place": {
+        "id": "c284b8665bb02ce1",
+        "url": "https://api.twitter.com/1.1/geo/id/c284b8665bb02ce1.json",
+        "place_type": "city",
+        "name": "Soto del Real",
+        "full_name": "Soto del Real, Comunidad de Madrid",
+        "country_code": "ES",
+        "country": "España",
+        "contained_within": [],
+        "bounding_box": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -3.8386208,
+                40.704396
+              ],
+              [
+                -3.7329982,
+                40.704396
+              ],
+              [
+                -3.7329982,
+                40.8136681
+              ],
+              [
+                -3.8386208,
+                40.8136681
+              ]
+            ]
+          ]
+        },
+        "attributes": {}
+      },
+      "source": "<a href=\"http://twitter.com/download/android\" rel=\"nofollow\">Twitter for Android</a>",
+      "user_loc": "Madrid",
+      "user_tz": "Madrid",
+      "user_lang": "es"
+    },
+    {
+      "name": "grafistica_es",
+      "geo": {
+        "type": "Point",
+        "coordinates": [
+          0,
+          0
+        ]
+      },
+      "place": {
+        "id": "c284b8665bb02ce1",
+        "url": "https://api.twitter.com/1.1/geo/id/c284b8665bb02ce1.json",
+        "place_type": "city",
+        "name": "Soto del Real",
+        "full_name": "Soto del Real, Comunidad de Madrid",
+        "country_code": "ES",
+        "country": "España",
+        "contained_within": [],
+        "bounding_box": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -3.8386208,
+                40.704396
+              ],
+              [
+                -3.7329982,
+                40.704396
+              ],
+              [
+                -3.7329982,
+                40.8136681
+              ],
+              [
+                -3.8386208,
+                40.8136681
+              ]
+            ]
+          ]
+        },
+        "attributes": {}
+      },
+      "source": "<a href=\"http://twitter.com/download/android\" rel=\"nofollow\">Twitter for Android</a>",
+      "user_loc": "Madrid",
+      "user_tz": "Madrid",
+      "user_lang": "es"
+    },
+    {
+      "name": "grafistica_es",
+      "geo": {
+        "type": "Point",
+        "coordinates": [
+          0,
+          0
+        ]
+      },
+      "place": {
+        "id": "c284b8665bb02ce1",
+        "url": "https://api.twitter.com/1.1/geo/id/c284b8665bb02ce1.json",
+        "place_type": "city",
+        "name": "Soto del Real",
+        "full_name": "Soto del Real, Comunidad de Madrid",
+        "country_code": "ES",
+        "country": "España",
+        "contained_within": [],
+        "bounding_box": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -3.8386208,
+                40.704396
+              ],
+              [
+                -3.7329982,
+                40.704396
+              ],
+              [
+                -3.7329982,
+                40.8136681
+              ],
+              [
+                -3.8386208,
+                40.8136681
+              ]
+            ]
+          ]
+        },
+        "attributes": {}
+      },
+      "source": "<a href=\"http://twitter.com/download/android\" rel=\"nofollow\">Twitter for Android</a>",
+      "user_loc": "Madrid",
+      "user_tz": "Madrid",
+      "user_lang": "es"
+    },
+    {
+      "name": "grafistica_es",
+      "geo": {
+        "type": "Point",
+        "coordinates": [
+          0,
+          0
+        ]
+      },
+      "place": {
+        "id": "c284b8665bb02ce1",
+        "url": "https://api.twitter.com/1.1/geo/id/c284b8665bb02ce1.json",
+        "place_type": "city",
+        "name": "Soto del Real",
+        "full_name": "Soto del Real, Comunidad de Madrid",
+        "country_code": "ES",
+        "country": "España",
+        "contained_within": [],
+        "bounding_box": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -3.8386208,
+                40.704396
+              ],
+              [
+                -3.7329982,
+                40.704396
+              ],
+              [
+                -3.7329982,
+                40.8136681
+              ],
+              [
+                -3.8386208,
+                40.8136681
+              ]
+            ]
+          ]
+        },
+        "attributes": {}
+      },
+      "source": "<a href=\"http://twitter.com/download/android\" rel=\"nofollow\">Twitter for Android</a>",
+      "user_loc": "Madrid",
+      "user_tz": "Madrid",
+      "user_lang": "es"
+    },
+    {
+      "name": "49carmonajose",
+      "geo": {
+        "type": "Point",
+        "coordinates": [
+          0,
+          0
+        ]
+      },
+      "place": {
+        "id": "206c436ce43a43a3",
+        "url": "https://api.twitter.com/1.1/geo/id/206c436ce43a43a3.json",
+        "place_type": "city",
+        "name": "Madrid",
+        "full_name": "Madrid, Comunidad de Madrid",
+        "country_code": "ES",
+        "country": "España",
+        "contained_within": [],
+        "bounding_box": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -3.8890049,
+                40.3120713
+              ],
+              [
+                -3.5180102,
+                40.3120713
+              ],
+              [
+                -3.5180102,
+                40.6435181
+              ],
+              [
+                -3.8890049,
+                40.6435181
+              ]
+            ]
+          ]
+        },
+        "attributes": {}
+      },
+      "source": "<a href=\"http://twitter.com/download/android\" rel=\"nofollow\">Twitter for Android</a>",
+      "user_loc": "#el6aLas5 allí di el paso ",
+      "user_tz": "Amsterdam",
+      "user_lang": "es"
+    },
+    {
+      "name": "49carmonajose",
+      "geo": {
+        "type": "Point",
+        "coordinates": [
+          0,
+          0
+        ]
+      },
+      "place": {
+        "id": "206c436ce43a43a3",
+        "url": "https://api.twitter.com/1.1/geo/id/206c436ce43a43a3.json",
+        "place_type": "city",
+        "name": "Madrid",
+        "full_name": "Madrid, Comunidad de Madrid",
+        "country_code": "ES",
+        "country": "España",
+        "contained_within": [],
+        "bounding_box": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -3.8890049,
+                40.3120713
+              ],
+              [
+                -3.5180102,
+                40.3120713
+              ],
+              [
+                -3.5180102,
+                40.6435181
+              ],
+              [
+                -3.8890049,
+                40.6435181
+              ]
+            ]
+          ]
+        },
+        "attributes": {}
+      },
+      "source": "<a href=\"http://twitter.com/download/android\" rel=\"nofollow\">Twitter for Android</a>",
+      "user_loc": "#el6aLas5 allí di el paso ",
+      "user_tz": "Amsterdam",
+      "user_lang": "es"
+    },
+    {
+      "name": "49carmonajose",
+      "geo": {
+        "type": "Point",
+        "coordinates": [
+          0,
+          0
+        ]
+      },
+      "place": {
+        "id": "206c436ce43a43a3",
+        "url": "https://api.twitter.com/1.1/geo/id/206c436ce43a43a3.json",
+        "place_type": "city",
+        "name": "Madrid",
+        "full_name": "Madrid, Comunidad de Madrid",
+        "country_code": "ES",
+        "country": "España",
+        "contained_within": [],
+        "bounding_box": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -3.8890049,
+                40.3120713
+              ],
+              [
+                -3.5180102,
+                40.3120713
+              ],
+              [
+                -3.5180102,
+                40.6435181
+              ],
+              [
+                -3.8890049,
+                40.6435181
+              ]
+            ]
+          ]
+        },
+        "attributes": {}
+      },
+      "source": "<a href=\"http://twitter.com/download/android\" rel=\"nofollow\">Twitter for Android</a>",
+      "user_loc": "#el6aLas5 allí di el paso ",
+      "user_tz": "Amsterdam",
+      "user_lang": "es"
+    },
+    {
+      "name": "49carmonajose",
+      "geo": {
+        "type": "Point",
+        "coordinates": [
+          0,
+          0
+        ]
+      },
+      "place": {
+        "id": "0df6ac4d361d4e0e",
+        "url": "https://api.twitter.com/1.1/geo/id/0df6ac4d361d4e0e.json",
+        "place_type": "city",
+        "name": "Vigo",
+        "full_name": "Vigo, Galicia",
+        "country_code": "ES",
+        "country": "España",
+        "contained_within": [],
+        "bounding_box": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -8.916355,
+                42.1293801
+              ],
+              [
+                -8.6267592,
+                42.1293801
+              ],
+              [
+                -8.6267592,
+                42.2647349
+              ],
+              [
+                -8.916355,
+                42.2647349
+              ]
+            ]
+          ]
+        },
+        "attributes": {}
+      },
+      "source": "<a href=\"http://twitter.com\" rel=\"nofollow\">Twitter Web Client</a>",
+      "user_loc": "#el6aLas5 allí di el paso ",
+      "user_tz": "Amsterdam",
+      "user_lang": "es"
+    },
+    {
+      "name": "grafistica_es",
+      "geo": {
+        "type": "Point",
+        "coordinates": [
+          0,
+          0
+        ]
+      },
+      "place": {
+        "id": "c284b8665bb02ce1",
+        "url": "https://api.twitter.com/1.1/geo/id/c284b8665bb02ce1.json",
+        "place_type": "city",
+        "name": "Soto del Real",
+        "full_name": "Soto del Real, Comunidad de Madrid",
+        "country_code": "ES",
+        "country": "España",
+        "contained_within": [],
+        "bounding_box": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -3.8386208,
+                40.704396
+              ],
+              [
+                -3.7329982,
+                40.704396
+              ],
+              [
+                -3.7329982,
+                40.8136681
+              ],
+              [
+                -3.8386208,
+                40.8136681
+              ]
+            ]
+          ]
+        },
+        "attributes": {}
+      },
+      "source": "<a href=\"http://twitter.com/download/android\" rel=\"nofollow\">Twitter for Android</a>",
+      "user_loc": "Madrid",
+      "user_tz": "Madrid",
+      "user_lang": "es"
+    },
+    {
+      "name": "grafistica_es",
+      "geo": {
+        "type": "Point",
+        "coordinates": [
+          0,
+          0
+        ]
+      },
+      "place": {
+        "id": "c284b8665bb02ce1",
+        "url": "https://api.twitter.com/1.1/geo/id/c284b8665bb02ce1.json",
+        "place_type": "city",
+        "name": "Soto del Real",
+        "full_name": "Soto del Real, Comunidad de Madrid",
+        "country_code": "ES",
+        "country": "España",
+        "contained_within": [],
+        "bounding_box": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -3.8386208,
+                40.704396
+              ],
+              [
+                -3.7329982,
+                40.704396
+              ],
+              [
+                -3.7329982,
+                40.8136681
+              ],
+              [
+                -3.8386208,
+                40.8136681
+              ]
+            ]
+          ]
+        },
+        "attributes": {}
+      },
+      "source": "<a href=\"http://twitter.com/download/android\" rel=\"nofollow\">Twitter for Android</a>",
+      "user_loc": "Madrid",
+      "user_tz": "Madrid",
+      "user_lang": "es"
+    },
+    {
+      "name": "grafistica_es",
+      "geo": {
+        "type": "Point",
+        "coordinates": [
+          0,
+          0
+        ]
+      },
+      "place": {
+        "id": "c284b8665bb02ce1",
+        "url": "https://api.twitter.com/1.1/geo/id/c284b8665bb02ce1.json",
+        "place_type": "city",
+        "name": "Soto del Real",
+        "full_name": "Soto del Real, Comunidad de Madrid",
+        "country_code": "ES",
+        "country": "España",
+        "contained_within": [],
+        "bounding_box": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -3.8386208,
+                40.704396
+              ],
+              [
+                -3.7329982,
+                40.704396
+              ],
+              [
+                -3.7329982,
+                40.8136681
+              ],
+              [
+                -3.8386208,
+                40.8136681
+              ]
+            ]
+          ]
+        },
+        "attributes": {}
+      },
+      "source": "<a href=\"http://twitter.com/download/android\" rel=\"nofollow\">Twitter for Android</a>",
+      "user_loc": "Madrid",
+      "user_tz": "Madrid",
+      "user_lang": "es"
+    },
+    {
+      "name": "grafistica_es",
+      "geo": {
+        "type": "Point",
+        "coordinates": [
+          0,
+          0
+        ]
+      },
+      "place": {
+        "id": "c284b8665bb02ce1",
+        "url": "https://api.twitter.com/1.1/geo/id/c284b8665bb02ce1.json",
+        "place_type": "city",
+        "name": "Soto del Real",
+        "full_name": "Soto del Real, Comunidad de Madrid",
+        "country_code": "ES",
+        "country": "España",
+        "contained_within": [],
+        "bounding_box": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -3.8386208,
+                40.704396
+              ],
+              [
+                -3.7329982,
+                40.704396
+              ],
+              [
+                -3.7329982,
+                40.8136681
+              ],
+              [
+                -3.8386208,
+                40.8136681
+              ]
+            ]
+          ]
+        },
+        "attributes": {}
+      },
+      "source": "<a href=\"http://twitter.com/download/android\" rel=\"nofollow\">Twitter for Android</a>",
+      "user_loc": "Madrid",
+      "user_tz": "Madrid",
+      "user_lang": "es"
+    },
+    {
+      "name": "49carmonajose",
+      "geo": {
+        "type": "Point",
+        "coordinates": [
+          0,
+          0
+        ]
+      },
+      "place": {
+        "id": "206c436ce43a43a3",
+        "url": "https://api.twitter.com/1.1/geo/id/206c436ce43a43a3.json",
+        "place_type": "city",
+        "name": "Madrid",
+        "full_name": "Madrid, Comunidad de Madrid",
+        "country_code": "ES",
+        "country": "España",
+        "contained_within": [],
+        "bounding_box": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -3.8890049,
+                40.3120713
+              ],
+              [
+                -3.5180102,
+                40.3120713
+              ],
+              [
+                -3.5180102,
+                40.6435181
+              ],
+              [
+                -3.8890049,
+                40.6435181
+              ]
+            ]
+          ]
+        },
+        "attributes": {}
+      },
+      "source": "<a href=\"http://twitter.com/download/android\" rel=\"nofollow\">Twitter for Android</a>",
+      "user_loc": "#el6aLas5 allí di el paso ",
+      "user_tz": "Amsterdam",
+      "user_lang": "es"
+    },
+    {
+      "name": "49carmonajose",
+      "geo": {
+        "type": "Point",
+        "coordinates": [
+          0,
+          0
+        ]
+      },
+      "place": {
+        "id": "206c436ce43a43a3",
+        "url": "https://api.twitter.com/1.1/geo/id/206c436ce43a43a3.json",
+        "place_type": "city",
+        "name": "Madrid",
+        "full_name": "Madrid, Comunidad de Madrid",
+        "country_code": "ES",
+        "country": "España",
+        "contained_within": [],
+        "bounding_box": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -3.8890049,
+                40.3120713
+              ],
+              [
+                -3.5180102,
+                40.3120713
+              ],
+              [
+                -3.5180102,
+                40.6435181
+              ],
+              [
+                -3.8890049,
+                40.6435181
+              ]
+            ]
+          ]
+        },
+        "attributes": {}
+      },
+      "source": "<a href=\"http://twitter.com/download/android\" rel=\"nofollow\">Twitter for Android</a>",
+      "user_loc": "#el6aLas5 allí di el paso ",
+      "user_tz": "Amsterdam",
+      "user_lang": "es"
+    },
+    {
+      "name": "49carmonajose",
+      "geo": {
+        "type": "Point",
+        "coordinates": [
+          0,
+          0
+        ]
+      },
+      "place": {
+        "id": "206c436ce43a43a3",
+        "url": "https://api.twitter.com/1.1/geo/id/206c436ce43a43a3.json",
+        "place_type": "city",
+        "name": "Madrid",
+        "full_name": "Madrid, Comunidad de Madrid",
+        "country_code": "ES",
+        "country": "España",
+        "contained_within": [],
+        "bounding_box": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -3.8890049,
+                40.3120713
+              ],
+              [
+                -3.5180102,
+                40.3120713
+              ],
+              [
+                -3.5180102,
+                40.6435181
+              ],
+              [
+                -3.8890049,
+                40.6435181
+              ]
+            ]
+          ]
+        },
+        "attributes": {}
+      },
+      "source": "<a href=\"http://twitter.com/download/android\" rel=\"nofollow\">Twitter for Android</a>",
+      "user_loc": "#el6aLas5 allí di el paso ",
+      "user_tz": "Amsterdam",
+      "user_lang": "es"
+    },
+    {
+      "name": "49carmonajose",
+      "geo": {
+        "type": "Point",
+        "coordinates": [
+          0,
+          0
+        ]
+      },
+      "place": {
+        "id": "0df6ac4d361d4e0e",
+        "url": "https://api.twitter.com/1.1/geo/id/0df6ac4d361d4e0e.json",
+        "place_type": "city",
+        "name": "Vigo",
+        "full_name": "Vigo, Galicia",
+        "country_code": "ES",
+        "country": "España",
+        "contained_within": [],
+        "bounding_box": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -8.916355,
+                42.1293801
+              ],
+              [
+                -8.6267592,
+                42.1293801
+              ],
+              [
+                -8.6267592,
+                42.2647349
+              ],
+              [
+                -8.916355,
+                42.2647349
+              ]
+            ]
+          ]
+        },
+        "attributes": {}
+      },
+      "source": "<a href=\"http://twitter.com\" rel=\"nofollow\">Twitter Web Client</a>",
+      "user_loc": "#el6aLas5 allí di el paso ",
+      "user_tz": "Amsterdam",
+      "user_lang": "es"
+    },
+    {
+      "name": "grafistica_es",
+      "geo": {
+        "type": "Point",
+        "coordinates": [
+          0,
+          0
+        ]
+      },
+      "place": {
+        "id": "c284b8665bb02ce1",
+        "url": "https://api.twitter.com/1.1/geo/id/c284b8665bb02ce1.json",
+        "place_type": "city",
+        "name": "Soto del Real",
+        "full_name": "Soto del Real, Comunidad de Madrid",
+        "country_code": "ES",
+        "country": "España",
+        "contained_within": [],
+        "bounding_box": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -3.8386208,
+                40.704396
+              ],
+              [
+                -3.7329982,
+                40.704396
+              ],
+              [
+                -3.7329982,
+                40.8136681
+              ],
+              [
+                -3.8386208,
+                40.8136681
+              ]
+            ]
+          ]
+        },
+        "attributes": {}
+      },
+      "source": "<a href=\"http://twitter.com/download/android\" rel=\"nofollow\">Twitter for Android</a>",
+      "user_loc": "Madrid",
+      "user_tz": "Madrid",
+      "user_lang": "es"
+    },
+    {
+      "name": "grafistica_es",
+      "geo": {
+        "type": "Point",
+        "coordinates": [
+          0,
+          0
+        ]
+      },
+      "place": {
+        "id": "c284b8665bb02ce1",
+        "url": "https://api.twitter.com/1.1/geo/id/c284b8665bb02ce1.json",
+        "place_type": "city",
+        "name": "Soto del Real",
+        "full_name": "Soto del Real, Comunidad de Madrid",
+        "country_code": "ES",
+        "country": "España",
+        "contained_within": [],
+        "bounding_box": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -3.8386208,
+                40.704396
+              ],
+              [
+                -3.7329982,
+                40.704396
+              ],
+              [
+                -3.7329982,
+                40.8136681
+              ],
+              [
+                -3.8386208,
+                40.8136681
+              ]
+            ]
+          ]
+        },
+        "attributes": {}
+      },
+      "source": "<a href=\"http://twitter.com/download/android\" rel=\"nofollow\">Twitter for Android</a>",
+      "user_loc": "Madrid",
+      "user_tz": "Madrid",
+      "user_lang": "es"
+    },
+    {
+      "name": "grafistica_es",
+      "geo": {
+        "type": "Point",
+        "coordinates": [
+          0,
+          0
+        ]
+      },
+      "place": {
+        "id": "c284b8665bb02ce1",
+        "url": "https://api.twitter.com/1.1/geo/id/c284b8665bb02ce1.json",
+        "place_type": "city",
+        "name": "Soto del Real",
+        "full_name": "Soto del Real, Comunidad de Madrid",
+        "country_code": "ES",
+        "country": "España",
+        "contained_within": [],
+        "bounding_box": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -3.8386208,
+                40.704396
+              ],
+              [
+                -3.7329982,
+                40.704396
+              ],
+              [
+                -3.7329982,
+                40.8136681
+              ],
+              [
+                -3.8386208,
+                40.8136681
+              ]
+            ]
+          ]
+        },
+        "attributes": {}
+      },
+      "source": "<a href=\"http://twitter.com/download/android\" rel=\"nofollow\">Twitter for Android</a>",
+      "user_loc": "Madrid",
+      "user_tz": "Madrid",
+      "user_lang": "es"
+    },
+    {
+      "name": "grafistica_es",
+      "geo": {
+        "type": "Point",
+        "coordinates": [
+          0,
+          0
+        ]
+      },
+      "place": {
+        "id": "c284b8665bb02ce1",
+        "url": "https://api.twitter.com/1.1/geo/id/c284b8665bb02ce1.json",
+        "place_type": "city",
+        "name": "Soto del Real",
+        "full_name": "Soto del Real, Comunidad de Madrid",
+        "country_code": "ES",
+        "country": "España",
+        "contained_within": [],
+        "bounding_box": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -3.8386208,
+                40.704396
+              ],
+              [
+                -3.7329982,
+                40.704396
+              ],
+              [
+                -3.7329982,
+                40.8136681
+              ],
+              [
+                -3.8386208,
+                40.8136681
+              ]
+            ]
+          ]
+        },
+        "attributes": {}
+      },
+      "source": "<a href=\"http://twitter.com/download/android\" rel=\"nofollow\">Twitter for Android</a>",
+      "user_loc": "Madrid",
+      "user_tz": "Madrid",
+      "user_lang": "es"
+    },
+    {
+      "name": "49carmonajose",
+      "geo": {
+        "type": "Point",
+        "coordinates": [
+          0,
+          0
+        ]
+      },
+      "place": {
+        "id": "206c436ce43a43a3",
+        "url": "https://api.twitter.com/1.1/geo/id/206c436ce43a43a3.json",
+        "place_type": "city",
+        "name": "Madrid",
+        "full_name": "Madrid, Comunidad de Madrid",
+        "country_code": "ES",
+        "country": "España",
+        "contained_within": [],
+        "bounding_box": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -3.8890049,
+                40.3120713
+              ],
+              [
+                -3.5180102,
+                40.3120713
+              ],
+              [
+                -3.5180102,
+                40.6435181
+              ],
+              [
+                -3.8890049,
+                40.6435181
+              ]
+            ]
+          ]
+        },
+        "attributes": {}
+      },
+      "source": "<a href=\"http://twitter.com/download/android\" rel=\"nofollow\">Twitter for Android</a>",
+      "user_loc": "#el6aLas5 allí di el paso ",
+      "user_tz": "Amsterdam",
+      "user_lang": "es"
+    },
+    {
+      "name": "49carmonajose",
+      "geo": {
+        "type": "Point",
+        "coordinates": [
+          0,
+          0
+        ]
+      },
+      "place": {
+        "id": "206c436ce43a43a3",
+        "url": "https://api.twitter.com/1.1/geo/id/206c436ce43a43a3.json",
+        "place_type": "city",
+        "name": "Madrid",
+        "full_name": "Madrid, Comunidad de Madrid",
+        "country_code": "ES",
+        "country": "España",
+        "contained_within": [],
+        "bounding_box": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -3.8890049,
+                40.3120713
+              ],
+              [
+                -3.5180102,
+                40.3120713
+              ],
+              [
+                -3.5180102,
+                40.6435181
+              ],
+              [
+                -3.8890049,
+                40.6435181
+              ]
+            ]
+          ]
+        },
+        "attributes": {}
+      },
+      "source": "<a href=\"http://twitter.com/download/android\" rel=\"nofollow\">Twitter for Android</a>",
+      "user_loc": "#el6aLas5 allí di el paso ",
+      "user_tz": "Amsterdam",
+      "user_lang": "es"
+    },
+    {
+      "name": "49carmonajose",
+      "geo": {
+        "type": "Point",
+        "coordinates": [
+          0,
+          0
+        ]
+      },
+      "place": {
+        "id": "206c436ce43a43a3",
+        "url": "https://api.twitter.com/1.1/geo/id/206c436ce43a43a3.json",
+        "place_type": "city",
+        "name": "Madrid",
+        "full_name": "Madrid, Comunidad de Madrid",
+        "country_code": "ES",
+        "country": "España",
+        "contained_within": [],
+        "bounding_box": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -3.8890049,
+                40.3120713
+              ],
+              [
+                -3.5180102,
+                40.3120713
+              ],
+              [
+                -3.5180102,
+                40.6435181
+              ],
+              [
+                -3.8890049,
+                40.6435181
+              ]
+            ]
+          ]
+        },
+        "attributes": {}
+      },
+      "source": "<a href=\"http://twitter.com/download/android\" rel=\"nofollow\">Twitter for Android</a>",
+      "user_loc": "#el6aLas5 allí di el paso ",
+      "user_tz": "Amsterdam",
+      "user_lang": "es"
+    },
+    {
+      "name": "49carmonajose",
+      "geo": {
+        "type": "Point",
+        "coordinates": [
+          0,
+          0
+        ]
+      },
+      "place": {
+        "id": "0df6ac4d361d4e0e",
+        "url": "https://api.twitter.com/1.1/geo/id/0df6ac4d361d4e0e.json",
+        "place_type": "city",
+        "name": "Vigo",
+        "full_name": "Vigo, Galicia",
+        "country_code": "ES",
+        "country": "España",
+        "contained_within": [],
+        "bounding_box": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -8.916355,
+                42.1293801
+              ],
+              [
+                -8.6267592,
+                42.1293801
+              ],
+              [
+                -8.6267592,
+                42.2647349
+              ],
+              [
+                -8.916355,
+                42.2647349
+              ]
+            ]
+          ]
+        },
+        "attributes": {}
+      },
+      "source": "<a href=\"http://twitter.com\" rel=\"nofollow\">Twitter Web Client</a>",
+      "user_loc": "#el6aLas5 allí di el paso ",
+      "user_tz": "Amsterdam",
+      "user_lang": "es"
+    },
+    {
+      "name": "grafistica_es",
+      "geo": {
+        "type": "Point",
+        "coordinates": [
+          0,
+          0
+        ]
+      },
+      "place": {
+        "id": "c284b8665bb02ce1",
+        "url": "https://api.twitter.com/1.1/geo/id/c284b8665bb02ce1.json",
+        "place_type": "city",
+        "name": "Soto del Real",
+        "full_name": "Soto del Real, Comunidad de Madrid",
+        "country_code": "ES",
+        "country": "España",
+        "contained_within": [],
+        "bounding_box": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -3.8386208,
+                40.704396
+              ],
+              [
+                -3.7329982,
+                40.704396
+              ],
+              [
+                -3.7329982,
+                40.8136681
+              ],
+              [
+                -3.8386208,
+                40.8136681
+              ]
+            ]
+          ]
+        },
+        "attributes": {}
+      },
+      "source": "<a href=\"http://twitter.com/download/android\" rel=\"nofollow\">Twitter for Android</a>",
+      "user_loc": "Madrid",
+      "user_tz": "Madrid",
+      "user_lang": "es"
+    },
+    {
+      "name": "grafistica_es",
+      "geo": {
+        "type": "Point",
+        "coordinates": [
+          0,
+          0
+        ]
+      },
+      "place": {
+        "id": "c284b8665bb02ce1",
+        "url": "https://api.twitter.com/1.1/geo/id/c284b8665bb02ce1.json",
+        "place_type": "city",
+        "name": "Soto del Real",
+        "full_name": "Soto del Real, Comunidad de Madrid",
+        "country_code": "ES",
+        "country": "España",
+        "contained_within": [],
+        "bounding_box": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -3.8386208,
+                40.704396
+              ],
+              [
+                -3.7329982,
+                40.704396
+              ],
+              [
+                -3.7329982,
+                40.8136681
+              ],
+              [
+                -3.8386208,
+                40.8136681
+              ]
+            ]
+          ]
+        },
+        "attributes": {}
+      },
+      "source": "<a href=\"http://twitter.com/download/android\" rel=\"nofollow\">Twitter for Android</a>",
+      "user_loc": "Madrid",
+      "user_tz": "Madrid",
+      "user_lang": "es"
+    },
+    {
+      "name": "grafistica_es",
+      "geo": {
+        "type": "Point",
+        "coordinates": [
+          0,
+          0
+        ]
+      },
+      "place": {
+        "id": "c284b8665bb02ce1",
+        "url": "https://api.twitter.com/1.1/geo/id/c284b8665bb02ce1.json",
+        "place_type": "city",
+        "name": "Soto del Real",
+        "full_name": "Soto del Real, Comunidad de Madrid",
+        "country_code": "ES",
+        "country": "España",
+        "contained_within": [],
+        "bounding_box": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -3.8386208,
+                40.704396
+              ],
+              [
+                -3.7329982,
+                40.704396
+              ],
+              [
+                -3.7329982,
+                40.8136681
+              ],
+              [
+                -3.8386208,
+                40.8136681
+              ]
+            ]
+          ]
+        },
+        "attributes": {}
+      },
+      "source": "<a href=\"http://twitter.com/download/android\" rel=\"nofollow\">Twitter for Android</a>",
+      "user_loc": "Madrid",
+      "user_tz": "Madrid",
+      "user_lang": "es"
+    },
+    {
+      "name": "grafistica_es",
+      "geo": {
+        "type": "Point",
+        "coordinates": [
+          0,
+          0
+        ]
+      },
+      "place": {
+        "id": "c284b8665bb02ce1",
+        "url": "https://api.twitter.com/1.1/geo/id/c284b8665bb02ce1.json",
+        "place_type": "city",
+        "name": "Soto del Real",
+        "full_name": "Soto del Real, Comunidad de Madrid",
+        "country_code": "ES",
+        "country": "España",
+        "contained_within": [],
+        "bounding_box": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -3.8386208,
+                40.704396
+              ],
+              [
+                -3.7329982,
+                40.704396
+              ],
+              [
+                -3.7329982,
+                40.8136681
+              ],
+              [
+                -3.8386208,
+                40.8136681
+              ]
+            ]
+          ]
+        },
+        "attributes": {}
+      },
+      "source": "<a href=\"http://twitter.com/download/android\" rel=\"nofollow\">Twitter for Android</a>",
+      "user_loc": "Madrid",
+      "user_tz": "Madrid",
+      "user_lang": "es"
+    },
+    {
+      "name": "49carmonajose",
+      "geo": {
+        "type": "Point",
+        "coordinates": [
+          0,
+          0
+        ]
+      },
+      "place": {
+        "id": "206c436ce43a43a3",
+        "url": "https://api.twitter.com/1.1/geo/id/206c436ce43a43a3.json",
+        "place_type": "city",
+        "name": "Madrid",
+        "full_name": "Madrid, Comunidad de Madrid",
+        "country_code": "ES",
+        "country": "España",
+        "contained_within": [],
+        "bounding_box": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -3.8890049,
+                40.3120713
+              ],
+              [
+                -3.5180102,
+                40.3120713
+              ],
+              [
+                -3.5180102,
+                40.6435181
+              ],
+              [
+                -3.8890049,
+                40.6435181
+              ]
+            ]
+          ]
+        },
+        "attributes": {}
+      },
+      "source": "<a href=\"http://twitter.com/download/android\" rel=\"nofollow\">Twitter for Android</a>",
+      "user_loc": "#el6aLas5 allí di el paso ",
+      "user_tz": "Amsterdam",
+      "user_lang": "es"
+    },
+    {
+      "name": "49carmonajose",
+      "geo": {
+        "type": "Point",
+        "coordinates": [
+          0,
+          0
+        ]
+      },
+      "place": {
+        "id": "206c436ce43a43a3",
+        "url": "https://api.twitter.com/1.1/geo/id/206c436ce43a43a3.json",
+        "place_type": "city",
+        "name": "Madrid",
+        "full_name": "Madrid, Comunidad de Madrid",
+        "country_code": "ES",
+        "country": "España",
+        "contained_within": [],
+        "bounding_box": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -3.8890049,
+                40.3120713
+              ],
+              [
+                -3.5180102,
+                40.3120713
+              ],
+              [
+                -3.5180102,
+                40.6435181
+              ],
+              [
+                -3.8890049,
+                40.6435181
+              ]
+            ]
+          ]
+        },
+        "attributes": {}
+      },
+      "source": "<a href=\"http://twitter.com/download/android\" rel=\"nofollow\">Twitter for Android</a>",
+      "user_loc": "#el6aLas5 allí di el paso ",
+      "user_tz": "Amsterdam",
+      "user_lang": "es"
+    },
+    {
+      "name": "49carmonajose",
+      "geo": {
+        "type": "Point",
+        "coordinates": [
+          0,
+          0
+        ]
+      },
+      "place": {
+        "id": "206c436ce43a43a3",
+        "url": "https://api.twitter.com/1.1/geo/id/206c436ce43a43a3.json",
+        "place_type": "city",
+        "name": "Madrid",
+        "full_name": "Madrid, Comunidad de Madrid",
+        "country_code": "ES",
+        "country": "España",
+        "contained_within": [],
+        "bounding_box": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -3.8890049,
+                40.3120713
+              ],
+              [
+                -3.5180102,
+                40.3120713
+              ],
+              [
+                -3.5180102,
+                40.6435181
+              ],
+              [
+                -3.8890049,
+                40.6435181
+              ]
+            ]
+          ]
+        },
+        "attributes": {}
+      },
+      "source": "<a href=\"http://twitter.com/download/android\" rel=\"nofollow\">Twitter for Android</a>",
+      "user_loc": "#el6aLas5 allí di el paso ",
+      "user_tz": "Amsterdam",
+      "user_lang": "es"
+    },
+    {
+      "name": "49carmonajose",
+      "geo": {
+        "type": "Point",
+        "coordinates": [
+          0,
+          0
+        ]
+      },
+      "place": {
+        "id": "0df6ac4d361d4e0e",
+        "url": "https://api.twitter.com/1.1/geo/id/0df6ac4d361d4e0e.json",
+        "place_type": "city",
+        "name": "Vigo",
+        "full_name": "Vigo, Galicia",
+        "country_code": "ES",
+        "country": "España",
+        "contained_within": [],
+        "bounding_box": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -8.916355,
+                42.1293801
+              ],
+              [
+                -8.6267592,
+                42.1293801
+              ],
+              [
+                -8.6267592,
+                42.2647349
+              ],
+              [
+                -8.916355,
+                42.2647349
+              ]
+            ]
+          ]
+        },
+        "attributes": {}
+      },
+      "source": "<a href=\"http://twitter.com\" rel=\"nofollow\">Twitter Web Client</a>",
+      "user_loc": "#el6aLas5 allí di el paso ",
+      "user_tz": "Amsterdam",
+      "user_lang": "es"
+    },
+    {
+      "name": "grafistica_es",
+      "geo": {
+        "type": "Point",
+        "coordinates": [
+          0,
+          0
+        ]
+      },
+      "place": {
+        "id": "c284b8665bb02ce1",
+        "url": "https://api.twitter.com/1.1/geo/id/c284b8665bb02ce1.json",
+        "place_type": "city",
+        "name": "Soto del Real",
+        "full_name": "Soto del Real, Comunidad de Madrid",
+        "country_code": "ES",
+        "country": "España",
+        "contained_within": [],
+        "bounding_box": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -3.8386208,
+                40.704396
+              ],
+              [
+                -3.7329982,
+                40.704396
+              ],
+              [
+                -3.7329982,
+                40.8136681
+              ],
+              [
+                -3.8386208,
+                40.8136681
+              ]
+            ]
+          ]
+        },
+        "attributes": {}
+      },
+      "source": "<a href=\"http://twitter.com/download/android\" rel=\"nofollow\">Twitter for Android</a>",
+      "user_loc": "Madrid",
+      "user_tz": "Madrid",
+      "user_lang": "es"
+    },
+    {
+      "name": "grafistica_es",
+      "geo": {
+        "type": "Point",
+        "coordinates": [
+          0,
+          0
+        ]
+      },
+      "place": {
+        "id": "c284b8665bb02ce1",
+        "url": "https://api.twitter.com/1.1/geo/id/c284b8665bb02ce1.json",
+        "place_type": "city",
+        "name": "Soto del Real",
+        "full_name": "Soto del Real, Comunidad de Madrid",
+        "country_code": "ES",
+        "country": "España",
+        "contained_within": [],
+        "bounding_box": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -3.8386208,
+                40.704396
+              ],
+              [
+                -3.7329982,
+                40.704396
+              ],
+              [
+                -3.7329982,
+                40.8136681
+              ],
+              [
+                -3.8386208,
+                40.8136681
+              ]
+            ]
+          ]
+        },
+        "attributes": {}
+      },
+      "source": "<a href=\"http://twitter.com/download/android\" rel=\"nofollow\">Twitter for Android</a>",
+      "user_loc": "Madrid",
+      "user_tz": "Madrid",
+      "user_lang": "es"
+    },
+    {
+      "name": "grafistica_es",
+      "geo": {
+        "type": "Point",
+        "coordinates": [
+          0,
+          0
+        ]
+      },
+      "place": {
+        "id": "c284b8665bb02ce1",
+        "url": "https://api.twitter.com/1.1/geo/id/c284b8665bb02ce1.json",
+        "place_type": "city",
+        "name": "Soto del Real",
+        "full_name": "Soto del Real, Comunidad de Madrid",
+        "country_code": "ES",
+        "country": "España",
+        "contained_within": [],
+        "bounding_box": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -3.8386208,
+                40.704396
+              ],
+              [
+                -3.7329982,
+                40.704396
+              ],
+              [
+                -3.7329982,
+                40.8136681
+              ],
+              [
+                -3.8386208,
+                40.8136681
+              ]
+            ]
+          ]
+        },
+        "attributes": {}
+      },
+      "source": "<a href=\"http://twitter.com/download/android\" rel=\"nofollow\">Twitter for Android</a>",
+      "user_loc": "Madrid",
+      "user_tz": "Madrid",
+      "user_lang": "es"
+    },
+    {
+      "name": "grafistica_es",
+      "geo": {
+        "type": "Point",
+        "coordinates": [
+          0,
+          0
+        ]
+      },
+      "place": {
+        "id": "c284b8665bb02ce1",
+        "url": "https://api.twitter.com/1.1/geo/id/c284b8665bb02ce1.json",
+        "place_type": "city",
+        "name": "Soto del Real",
+        "full_name": "Soto del Real, Comunidad de Madrid",
+        "country_code": "ES",
+        "country": "España",
+        "contained_within": [],
+        "bounding_box": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -3.8386208,
+                40.704396
+              ],
+              [
+                -3.7329982,
+                40.704396
+              ],
+              [
+                -3.7329982,
+                40.8136681
+              ],
+              [
+                -3.8386208,
+                40.8136681
+              ]
+            ]
+          ]
+        },
+        "attributes": {}
+      },
+      "source": "<a href=\"http://twitter.com/download/android\" rel=\"nofollow\">Twitter for Android</a>",
+      "user_loc": "Madrid",
+      "user_tz": "Madrid",
+      "user_lang": "es"
+    },
+    {
+      "name": "49carmonajose",
+      "geo": {
+        "type": "Point",
+        "coordinates": [
+          0,
+          0
+        ]
+      },
+      "place": {
+        "id": "206c436ce43a43a3",
+        "url": "https://api.twitter.com/1.1/geo/id/206c436ce43a43a3.json",
+        "place_type": "city",
+        "name": "Madrid",
+        "full_name": "Madrid, Comunidad de Madrid",
+        "country_code": "ES",
+        "country": "España",
+        "contained_within": [],
+        "bounding_box": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -3.8890049,
+                40.3120713
+              ],
+              [
+                -3.5180102,
+                40.3120713
+              ],
+              [
+                -3.5180102,
+                40.6435181
+              ],
+              [
+                -3.8890049,
+                40.6435181
+              ]
+            ]
+          ]
+        },
+        "attributes": {}
+      },
+      "source": "<a href=\"http://twitter.com/download/android\" rel=\"nofollow\">Twitter for Android</a>",
+      "user_loc": "#el6aLas5 allí di el paso ",
+      "user_tz": "Amsterdam",
+      "user_lang": "es"
+    },
+    {
+      "name": "49carmonajose",
+      "geo": {
+        "type": "Point",
+        "coordinates": [
+          0,
+          0
+        ]
+      },
+      "place": {
+        "id": "206c436ce43a43a3",
+        "url": "https://api.twitter.com/1.1/geo/id/206c436ce43a43a3.json",
+        "place_type": "city",
+        "name": "Madrid",
+        "full_name": "Madrid, Comunidad de Madrid",
+        "country_code": "ES",
+        "country": "España",
+        "contained_within": [],
+        "bounding_box": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -3.8890049,
+                40.3120713
+              ],
+              [
+                -3.5180102,
+                40.3120713
+              ],
+              [
+                -3.5180102,
+                40.6435181
+              ],
+              [
+                -3.8890049,
+                40.6435181
+              ]
+            ]
+          ]
+        },
+        "attributes": {}
+      },
+      "source": "<a href=\"http://twitter.com/download/android\" rel=\"nofollow\">Twitter for Android</a>",
+      "user_loc": "#el6aLas5 allí di el paso ",
+      "user_tz": "Amsterdam",
+      "user_lang": "es"
+    },
+    {
+      "name": "49carmonajose",
+      "geo": {
+        "type": "Point",
+        "coordinates": [
+          0,
+          0
+        ]
+      },
+      "place": {
+        "id": "206c436ce43a43a3",
+        "url": "https://api.twitter.com/1.1/geo/id/206c436ce43a43a3.json",
+        "place_type": "city",
+        "name": "Madrid",
+        "full_name": "Madrid, Comunidad de Madrid",
+        "country_code": "ES",
+        "country": "España",
+        "contained_within": [],
+        "bounding_box": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -3.8890049,
+                40.3120713
+              ],
+              [
+                -3.5180102,
+                40.3120713
+              ],
+              [
+                -3.5180102,
+                40.6435181
+              ],
+              [
+                -3.8890049,
+                40.6435181
+              ]
+            ]
+          ]
+        },
+        "attributes": {}
+      },
+      "source": "<a href=\"http://twitter.com/download/android\" rel=\"nofollow\">Twitter for Android</a>",
+      "user_loc": "#el6aLas5 allí di el paso ",
+      "user_tz": "Amsterdam",
+      "user_lang": "es"
+    },
+    {
+      "name": "49carmonajose",
+      "geo": {
+        "type": "Point",
+        "coordinates": [
+          0,
+          0
+        ]
+      },
+      "place": {
+        "id": "0df6ac4d361d4e0e",
+        "url": "https://api.twitter.com/1.1/geo/id/0df6ac4d361d4e0e.json",
+        "place_type": "city",
+        "name": "Vigo",
+        "full_name": "Vigo, Galicia",
+        "country_code": "ES",
+        "country": "España",
+        "contained_within": [],
+        "bounding_box": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -8.916355,
+                42.1293801
+              ],
+              [
+                -8.6267592,
+                42.1293801
+              ],
+              [
+                -8.6267592,
+                42.2647349
+              ],
+              [
+                -8.916355,
+                42.2647349
+              ]
+            ]
+          ]
+        },
+        "attributes": {}
+      },
+      "source": "<a href=\"http://twitter.com\" rel=\"nofollow\">Twitter Web Client</a>",
+      "user_loc": "#el6aLas5 allí di el paso ",
+      "user_tz": "Amsterdam",
+      "user_lang": "es"
+    },
+    {
+      "name": "grafistica_es",
+      "geo": {
+        "type": "Point",
+        "coordinates": [
+          0,
+          0
+        ]
+      },
+      "place": {
+        "id": "c284b8665bb02ce1",
+        "url": "https://api.twitter.com/1.1/geo/id/c284b8665bb02ce1.json",
+        "place_type": "city",
+        "name": "Soto del Real",
+        "full_name": "Soto del Real, Comunidad de Madrid",
+        "country_code": "ES",
+        "country": "España",
+        "contained_within": [],
+        "bounding_box": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -3.8386208,
+                40.704396
+              ],
+              [
+                -3.7329982,
+                40.704396
+              ],
+              [
+                -3.7329982,
+                40.8136681
+              ],
+              [
+                -3.8386208,
+                40.8136681
+              ]
+            ]
+          ]
+        },
+        "attributes": {}
+      },
+      "source": "<a href=\"http://twitter.com/download/android\" rel=\"nofollow\">Twitter for Android</a>",
+      "user_loc": "Madrid",
+      "user_tz": "Madrid",
+      "user_lang": "es"
+    },
+    {
+      "name": "grafistica_es",
+      "geo": {
+        "type": "Point",
+        "coordinates": [
+          0,
+          0
+        ]
+      },
+      "place": {
+        "id": "c284b8665bb02ce1",
+        "url": "https://api.twitter.com/1.1/geo/id/c284b8665bb02ce1.json",
+        "place_type": "city",
+        "name": "Soto del Real",
+        "full_name": "Soto del Real, Comunidad de Madrid",
+        "country_code": "ES",
+        "country": "España",
+        "contained_within": [],
+        "bounding_box": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -3.8386208,
+                40.704396
+              ],
+              [
+                -3.7329982,
+                40.704396
+              ],
+              [
+                -3.7329982,
+                40.8136681
+              ],
+              [
+                -3.8386208,
+                40.8136681
+              ]
+            ]
+          ]
+        },
+        "attributes": {}
+      },
+      "source": "<a href=\"http://twitter.com/download/android\" rel=\"nofollow\">Twitter for Android</a>",
+      "user_loc": "Madrid",
+      "user_tz": "Madrid",
+      "user_lang": "es"
+    },
+    {
+      "name": "grafistica_es",
+      "geo": {
+        "type": "Point",
+        "coordinates": [
+          0,
+          0
+        ]
+      },
+      "place": {
+        "id": "c284b8665bb02ce1",
+        "url": "https://api.twitter.com/1.1/geo/id/c284b8665bb02ce1.json",
+        "place_type": "city",
+        "name": "Soto del Real",
+        "full_name": "Soto del Real, Comunidad de Madrid",
+        "country_code": "ES",
+        "country": "España",
+        "contained_within": [],
+        "bounding_box": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -3.8386208,
+                40.704396
+              ],
+              [
+                -3.7329982,
+                40.704396
+              ],
+              [
+                -3.7329982,
+                40.8136681
+              ],
+              [
+                -3.8386208,
+                40.8136681
+              ]
+            ]
+          ]
+        },
+        "attributes": {}
+      },
+      "source": "<a href=\"http://twitter.com/download/android\" rel=\"nofollow\">Twitter for Android</a>",
+      "user_loc": "Madrid",
+      "user_tz": "Madrid",
+      "user_lang": "es"
+    },
+    {
+      "name": "grafistica_es",
+      "geo": {
+        "type": "Point",
+        "coordinates": [
+          0,
+          0
+        ]
+      },
+      "place": {
+        "id": "c284b8665bb02ce1",
+        "url": "https://api.twitter.com/1.1/geo/id/c284b8665bb02ce1.json",
+        "place_type": "city",
+        "name": "Soto del Real",
+        "full_name": "Soto del Real, Comunidad de Madrid",
+        "country_code": "ES",
+        "country": "España",
+        "contained_within": [],
+        "bounding_box": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -3.8386208,
+                40.704396
+              ],
+              [
+                -3.7329982,
+                40.704396
+              ],
+              [
+                -3.7329982,
+                40.8136681
+              ],
+              [
+                -3.8386208,
+                40.8136681
+              ]
+            ]
+          ]
+        },
+        "attributes": {}
+      },
+      "source": "<a href=\"http://twitter.com/download/android\" rel=\"nofollow\">Twitter for Android</a>",
+      "user_loc": "Madrid",
+      "user_tz": "Madrid",
+      "user_lang": "es"
+    }
+  ],
+  "en": [],
+  "pt": [],
+  "und": []
+}

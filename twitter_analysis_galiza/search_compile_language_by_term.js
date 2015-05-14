@@ -26,20 +26,17 @@ twitter.getRequestToken(function(error, requestToken, requestTokenSecret, result
   token['secret'] = process.argv[3].trim();
   console.log(JSON.stringify(token));
 
-  var page = -1;
-  var results = [];
-
-  cursorLoop(page, process.argv[4].trim(), results);
+  cursorLoop("9999999999999999999999", 10, process.argv[4].trim(), {});
 });
 
 
-function cursorLoop (page, q, results) {
-  twitter.followers('list',
+function cursorLoop (page, loop, q, results) {
+  twitter.search(
   {
-    'user_id' : q,
+    'q' : q,
     'result_type' : 'recent',
-    'count' : 200,
-    'cursor' : page
+    'count' : 100,
+    'max_id' : page
   },
   token.token,
   token.secret,
@@ -48,16 +45,31 @@ function cursorLoop (page, q, results) {
       console.log(error);
     }
 
-    for (var n in data.users) {
-      results.push(data.users[n]);
+    for (var n in data.statuses) {
+      if (!results[data.statuses[n].metadata.iso_language_code]) {
+        results[data.statuses[n].metadata.iso_language_code] = [];
+      }
+      if (data.statuses[n].geo) {
+        var to_insert = {
+          'name' : data.statuses[n].user.screen_name,
+          'geo' : require('clone')(data.statuses[n].geo),
+          'place' : data.statuses[n].place,
+          'source' : data.statuses[n].source,
+          'user_loc' : data.statuses[n].user.location,
+          'user_tz' : data.statuses[n].user.time_zone,
+          'user_lang' : data.statuses[n].user.lang
+        };
+    
+        results[data.statuses[n].metadata.iso_language_code].push(to_insert);
+      }
     }
 
-    if (data.next_cursor == 0 || data.next_cursor == null) {
-      console.log(results);
+    if (loop == 0) {
+      console.log(JSON.stringify(results, null, 2));
       return;
     }
     
-    setTimeout(cursorLoop, 10000, data.next_cursor, q, results);
+    setTimeout(cursorLoop, 10000, data.search_metadata.max_id_str, loop - 1, q, results);
   });
 }
 

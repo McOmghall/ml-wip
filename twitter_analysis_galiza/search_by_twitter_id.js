@@ -53,7 +53,7 @@ function cursorLoop (page, q, results) {
     }
 
     if (data.next_cursor == 0 || data.next_cursor == null) {
-      console.log(JSON.stringify(results));
+      console.log(JSON.stringify(results, null, 2));
       return;
     }
     

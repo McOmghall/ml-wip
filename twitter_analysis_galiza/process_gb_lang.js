@@ -6,6 +6,7 @@ for (var lang in data) {
   for (var n in data[lang]) {
     var words = data[lang][n].text
       .replace(/[.,?!;()"'-]/g, " ")
+      .replace(/http:/g, " ")
       .replace(/\s+/g, " ")
       .toLowerCase()
       .split(" ");
@@ -27,5 +28,6 @@ for (var n in wordCount) {
 
 sortable.sort(function(a, b) {return a[1] - b[1]})
 
-console.log(JSON.stringify(sortable, null, 2));
-
+sortable.forEach(function (word) {
+  console.log(word[0] + " " + word[1]);
+});

@@ -4,6 +4,7 @@ from locale import *
 import locale
 import matplotlib.pyplot as plt
 import neurolab 
+from pylab import *
 
 
 locale.setlocale(LC_NUMERIC, '')
@@ -67,67 +68,77 @@ oxigeno                 = pandas.Series(oxigeno[oxigeno.columns[1]].values, oxig
 
 # Learn dataset
 # Base dataset
-input = pandas.concat([(lluvias.resample('H') - lluvias.resample('H').mean()) / (lluvias.resample('H').max() - lluvias.resample('H').min())
-             , (mareas.resample('H') - mareas.resample('H').mean()) / (mareas.resample('H').max() - mareas.resample('H').min())
-             , (conductividad.resample('H') - conductividad.resample('H').mean()) / (conductividad.resample('H').max() - conductividad.resample('H').min())]
-             , axis = 1).dropna()
+input = pandas.concat([
+             lluvias.resample('15Min') / lluvias.max() - lluvias.mean() / lluvias.max() 
+             , mareas.resample('15Min').interpolate() / mareas.max() - mareas.mean() / mareas.max()
+             , conductividad.resample('15Min') / conductividad.max() - conductividad.mean() / conductividad.max()
+             ]
+             , axis = 1)
+
+
+
 
 min_lluvias = input.min()[0]
 max_lluvias = input.max()[0]
 min_mareas  = input.min()[1]
 max_mareas  = input.max()[1]
 
+print [min_lluvias, max_lluvias, min_mareas, max_mareas]
+
 # Modified dataset with 8 2-hour windows for each parameter
-input = pandas.concat([input[[0]].shift(1), input[[0]].shift(3), input[[0]].shift(5), input[[0]].shift(7), input[[0]].shift(9), input[[0]].shift(11), input[[0]].shift(13), input[[0]].shift(15)
-	, input[[1]].shift(1), input[[1]].shift(3), input[[1]].shift(5), input[[1]].shift(7), input[[1]].shift(9), input[[1]].shift(11), input[[1]].shift(13), input[[1]].shift(15),	
-	input[[2]]], axis = 1, ignore_index=True).dropna()
+param_array = pandas.DataFrame() 
+for i in range(1, 41) :
+  param_array = pandas.concat([param_array, input[[0]].shift(i * 2)], axis=1, ignore_index=True)
+
+for i in range(1, 21) :
+  param_array= pandas.concat([param_array, input[[1]].shift(i * 2)], axis=1, ignore_index=True)
+
+print param_array
+
+input = pandas.concat([param_array, input[[2]]], axis = 1, ignore_index=True).dropna()
+output = input.pop(input.columns[-1])
 
 
 #Saved hourly interpolated dataset to file, to convert data to 
 # 5 hour windows (i.e. 5 hour lluvias + 5 hour mareas to predict this hour conductividad)
 import time
-input.to_csv(time.strftime("%Y%m%d-%H%M%S") + "clean.csv")
 
-output = input[[16]]
-input  = input.drop(16, axis=1)
+figure, axes = subplots(nrows=2, ncols=1)
 
-print(output)
+output.plot(ax=axes[0])
+input.plot(ax=axes[1])
+
+show()
+
 
 # Create network with 3 layers, 10 inputs and random initialized
-net = neurolab.net.newff([[min_lluvias, max_lluvias]
-		, [min_lluvias, max_lluvias]
-		, [min_lluvias, max_lluvias]
-		, [min_lluvias, max_lluvias]
-		, [min_lluvias, max_lluvias]
-		, [min_lluvias, max_lluvias]
-		, [min_lluvias, max_lluvias]
-		, [min_lluvias, max_lluvias]
-		, [min_mareas, max_mareas]
-		, [min_mareas, max_mareas]
-		, [min_mareas, max_mareas]
-		, [min_mareas, max_mareas]
-		, [min_mareas, max_mareas]
-		, [min_mareas, max_mareas]
-		, [min_mareas, max_mareas]
-		, [min_mareas, max_mareas]]
-	, [20, 10, 10, 1])
+net = neurolab.net.newff(([[min_lluvias, max_lluvias]]*40).extend([[min_mareas, max_mareas]]*20), [5, 20, 10, 1])
+
 
 # Train network
-error = net.train(input.values, output.values, epochs=500, show=50, goal=0.02)
+print net.trainf
+print net.errorf
+net.init()
 
-net.save(time.strftime("%Y%m%d-%H%M%S") + ".rnasa")
+print output.values
+print input.values
+
+error = net.train(input.values, output.values, epochs=100, show=50, goal=0.02)
+
+print error
+
+for layer in net.layers :
+  for x in layer.np :
+    print layer.np[x] 
 
 # Simulate network
 output['sim'] = net.sim(input.values)
 error = output[16] - output['sim']
 
 # Plot result
-from pylab import *
 
 figure, axes = subplots(nrows=2, ncols=1)
 
-print(figure)
-print(axes)
 output.plot(ax=axes[0])
 error.plot(ax=axes[1])
 

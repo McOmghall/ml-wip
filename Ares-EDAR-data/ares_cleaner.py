@@ -91,6 +91,6 @@ for i in range(1, 21) :
 
 input = pandas.concat([param_array, input[[2]]], axis = 1, ignore_index=True).dropna()
 
-input.to_csv("./results_clean.csv", sep=';')
+input.to_csv("./results_clean.csv", sep=',')
 
 

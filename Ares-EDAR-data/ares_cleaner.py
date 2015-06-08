@@ -65,9 +65,9 @@ oxigeno                 = pandas.Series(oxigeno[oxigeno.columns[1]].values, oxig
 # Learn dataset
 # Base dataset
 input = pandas.concat([
-             lluvias.resample('15Min') / lluvias.max() - lluvias.mean() / lluvias.max() 
-             , mareas.resample('15Min').interpolate() / mareas.max() - mareas.mean() / mareas.max()
-             , conductividad.resample('15Min') / conductividad.max() - conductividad.mean() / conductividad.max()
+             lluvias.resample('1H') / lluvias.max() - lluvias.mean() / lluvias.max() 
+             , mareas.resample('1H').interpolate() / mareas.max() - mareas.mean() / mareas.max()
+             , conductividad.resample('1H') / conductividad.max() - conductividad.mean() / conductividad.max()
              ]
              , axis = 1)
 
@@ -91,6 +91,6 @@ for i in range(1, 21) :
 
 input = pandas.concat([param_array, input[[2]]], axis = 1, ignore_index=True).dropna()
 
-input.to_csv("./results_clean.csv", sep=',')
+input.to_csv("./results_clean.csv", sep=',', index = False)
 
 

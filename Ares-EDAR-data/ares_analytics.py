@@ -5,6 +5,7 @@ import locale
 import matplotlib.pyplot as plt
 import neurolab 
 from pylab import *
+import numpy as np
 
 
 locale.setlocale(LC_NUMERIC, '')
@@ -93,7 +94,6 @@ for i in range(1, 41) :
 for i in range(1, 21) :
   param_array= pandas.concat([param_array, input[[1]].shift(i * 2)], axis=1, ignore_index=True)
 
-print param_array
 
 input = pandas.concat([param_array, input[[2]]], axis = 1, ignore_index=True).dropna()
 output = input.pop(input.columns[-1])
@@ -110,9 +110,10 @@ input.plot(ax=axes[1])
 
 show()
 
+max_and_min = np.array([[min_lluvias, max_lluvias]]*40 + [[min_mareas, max_mareas]]*20)
 
 # Create network with 3 layers, 10 inputs and random initialized
-net = neurolab.net.newff(([[min_lluvias, max_lluvias]]*40).extend([[min_mareas, max_mareas]]*20), [5, 20, 10, 1])
+net = neurolab.net.newff(max_and_min, [5, 20, 10, 1])
 
 
 # Train network
@@ -120,26 +121,32 @@ print net.trainf
 print net.errorf
 net.init()
 
-print output.values
-print input.values
+output_train = np.array(output.values)
+output_train = np.reshape(output_train, (output_train.size, 1))
 
-error = net.train(input.values, output.values, epochs=100, show=50, goal=0.02)
+print "input dimensions {}".format(input.ndim)
+print "output dimensions {}".format(output_train.ndim)
+
+print "train"
+
+error = net.train(input.values, output_train, epochs=100, show=5, goal=0.02)
 
 print error
 
-for layer in net.layers :
-  for x in layer.np :
-    print layer.np[x] 
-
 # Simulate network
-output['sim'] = net.sim(input.values)
-error = output[16] - output['sim']
+
+output_train = pandas.DataFrame() 
+output_train['data'] = output.values
+output_train['sim'] = net.sim(input.values)
+print output_train
+
+error = output_train['data'] - output_train['sim']
 
 # Plot result
 
 figure, axes = subplots(nrows=2, ncols=1)
 
-output.plot(ax=axes[0])
+output_train.plot(ax=axes[0])
 error.plot(ax=axes[1])
 
 show()

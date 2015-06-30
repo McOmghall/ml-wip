@@ -187,8 +187,10 @@ input_test = pandas.concat([
 
 param_array_test = pandas.DataFrame() 
 for i in range(1, 41) :
-  param_array_test = pandas.concat([param_array_test, input[[0]].shift(i * 2)], axis=1, ignore_index=True)
+  param_array_test = pandas.concat([param_array_test, input_test[[0]].shift(i * 2)], axis=1, ignore_index=True)
 
 for i in range(1, 21) :
-  param_array_test = pandas.concat([param_array_test, input[[1]].shift(i * 2)], axis=1, ignore_index=True)
+  param_array_test = pandas.concat([param_array_test, input_test[[1]].shift(i * 2)], axis=1, ignore_index=True)
 
+input_test  = pandas.concat([param_array_test, input_test[[2]]], axis = 1, ignore_index=True).dropna()
+output_test = input_test.pop(input_test.columns[-1])

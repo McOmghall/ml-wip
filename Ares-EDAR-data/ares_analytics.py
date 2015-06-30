@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 import pandas
 import os
 from locale import *
@@ -56,7 +57,7 @@ oxigeno[oxigeno.columns[1]] 			= oxigeno[oxigeno.columns[1]].map(locale.atof)
 
 lluvias                 = lluvias[lluvias[lluvias.columns[1]] >= 0]
 
-
+#Añadir indice timeseries
 materia_organica        = pandas.Series(materia_organica[materia_organica.columns[1]].values, materia_organica[materia_organica.columns[0]])
 conductividad           = pandas.Series(conductividad[conductividad.columns[1]].values, conductividad[conductividad.columns[0]])
 amonio                  = pandas.Series(amonio[amonio.columns[1]].values, amonio[amonio.columns[0]])
@@ -138,9 +139,11 @@ print error
 output_train = pandas.DataFrame() 
 output_train['data'] = output.values
 output_train['sim'] = net.sim(input.values)
-print output_train
 
 error = output_train['data'] - output_train['sim']
+
+print output_train
+print error
 
 # Plot result
 
@@ -150,3 +153,42 @@ output_train.plot(ax=axes[0])
 error.plot(ax=axes[1])
 
 show()
+
+#load test set
+fs = pandas.read_csv('./Ares_test.csv', sep=';', encoding='cp1252', parse_dates=[1,3,5], dayfirst=True)
+
+# Separar por pares de columnas
+lluvias_test	    = pandas.DataFrame(fs[[fs.columns[0], fs.columns[1]]]).dropna()
+mareas_test         = pandas.DataFrame(fs[[fs.columns[2], fs.columns[3]]]).dropna()
+conductividad_test  = pandas.DataFrame(fs[[fs.columns[4], fs.columns[5]]]).dropna()
+
+#Convertir a fechas la primera columna
+lluvias_test[lluvias_test.columns[0]] 	          = pandas.to_datetime(lluvias_test[lluvias_test.columns[0]], dayfirst=True)
+mareas_test[mareas_test.columns[0]] 	          = pandas.to_datetime(mareas_test[mareas_test.columns[0]], dayfirst=True)
+conductividad_test[conductividad_test.columns[0]] = pandas.to_datetime(conductividad_test[conductividad_test.columns[0]], dayfirst=True)
+
+#Convertir a float la segunda
+lluvias_test[lluvias_test.columns[1]] 	          = lluvias_test[lluvias_test.columns[1]].map(locale.atof)
+mareas_test[mareas_test.columns[1]] 	          = mareas_test[mareas_test.columns[1]].map(locale.atof)
+conductividad_test[conductividad_test.columns[1]] = conductividad_test[conductividad_test.columns[1]].map(locale.atof)
+
+#Añadir indice timeseries
+lluvias_test        = pandas.Series(lluvias_test[lluvias_test.columns[1]].values, lluvias_test[lluvias_test.columns[0]])
+mareas_test         = pandas.Series(mareas_test[mareas_test.columns[1]].values, mareas_test[mareas_test.columns[0]])
+conductividad_test  = pandas.Series(conductividad_test[conductividad_test.columns[1]].values, conductividad_test[conductividad_test.columns[0]])
+
+
+input_test = pandas.concat([
+             lluvias_test.resample('15Min') / lluvias_test.max() - lluvias_test.mean() / lluvias_test.max() 
+             , mareas_test.resample('15Min').interpolate() / mareas_test.max() - mareas_test.mean() / mareas_test.max()
+             , conductividad_test.resample('15Min') / conductividad_test.max() - conductividad_test.mean() / conductividad_test.max()
+             ]
+             , axis = 1)
+
+param_array_test = pandas.DataFrame() 
+for i in range(1, 41) :
+  param_array_test = pandas.concat([param_array_test, input[[0]].shift(i * 2)], axis=1, ignore_index=True)
+
+for i in range(1, 21) :
+  param_array_test = pandas.concat([param_array_test, input[[1]].shift(i * 2)], axis=1, ignore_index=True)
+

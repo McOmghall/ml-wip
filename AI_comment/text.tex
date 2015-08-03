@@ -59,16 +59,10 @@
 
 
 
-% General definitions for all Chapters
-%-------------------------------------------------------------------------------
-
-% Define Page style for all chapters
-\pagestyle{fancy}
-% Delete the current section for header and footer
-\fancyhf{}
-% Set custom header
-\lhead[]{\thepage}
-\rhead[\thepage]{}
+\setlength{\epigraphwidth}{0.8\textwidth}
+\thispagestyle{empty}
+\epigraph{``\textit{Intelligence is} what is measured by intelligence tests.''}{E. Boring, circa 1920}
+\newpage
 
 
 % Not enumerated chapter
@@ -81,15 +75,10 @@
 
 \newpage
 \thispagestyle{empty}
-% Set arabic (1,2,3...) page numbering
-\pagenumbering{arabic}
 
-\setlength{\epigraphwidth}{0.8\textwidth}
 
 % Set double spacing for the text
 \DoubleSpacing
-\epigraph{``\textit{Intelligence is} what is measured by intelligence tests.''}{E. Boring, circa 1920}
-\newpage
 
 % If the chapter ends in an odd page, you may want to skip having the page
 %  number in the empty page
@@ -99,8 +88,18 @@
 \begin{KeepFromToc}
   \tableofcontents
 \end{KeepFromToc}
+\thispagestyle{empty}
 \newpage
 
+% Define Page style for all chapters
+\pagestyle{fancy}
+% Delete the current section for header and footer
+\fancyhf{}
+% Set custom header
+\lhead[]{\thepage}
+\rhead[\thepage]{}
+% Set arabic (1,2,3...) page numbering
+\pagenumbering{arabic}
 
 % First enumerated chapter
 %-------------------------------------------------------------------------------

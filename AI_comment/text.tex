@@ -16,6 +16,7 @@
 \usepackage{libertine}
 \usepackage{microtype}
 \usepackage{graphicx}
+\usepackage{epigraph}
 \usepackage[autostyle]{csquotes}  
 \usepackage[style=authoryear,backend=bibtex]{biblatex}
 \bibliography{philo}
@@ -74,7 +75,7 @@
 %-------------------------------------------------------------------------------
 \thispagestyle{empty}
 \begin{abstract}
-	Este trabajo pretende estudiar la evolución del concepto de inteligencia en los grupos de Inteligencia Artificial a partir de la publicación por parte de Alan Turing de \textit{Computing Machinery and Intelligence} en \cite{Turing1950cmi}, las impresiones y técnicas generadas a partir de éste artículo y otros por los investigadores en esta disciplina en la década de 1960 que han tenido un impacto en la vertiente filosófica de este problema y en última instancia proponer una clasificación de los tipos de problemas que se intentan resolver en la disciplina hoy en día contrastándolos con las intenciones de los fundadores de la disciplina en la década de los 60. Se hará una recensión de los problemas que la pregunta \textbf{¿Puede pensar una máquina?} genera, de los tipos de soluciones técnicas que se dan con los problemas que éstas enfrentan, técnicos y matemáticos, y de los nuevos problemas y conclusiones filosóficas a los que nos lleva ésta. Como guía organizativa se ha usado el trabajo de Nils Nilsson\footnote{Investigador en el \textit{Department of Computer Science} de la Universidad de Stanford, inventor de varios algoritmos de gran importancia en redes neuronales y co-creador del algoritmo $A^*$, que permite descubrir el mejor camino más corto entre dos nodos de un grafo mejorando la búsqueda exhaustiva ponderada (conocida como \textit{algoritmo de Dijkstra}) mediante el uso de métricas heurísticas.} \parencite{Nilsson2009} sobre historia de la IA titulado \citetitle{Nilsson2009}.
+	Este trabajo pretende estudiar la evolución del concepto de inteligencia\footnote{Para ver una pequeña lista de definiciones históricas de inteligencia en diferentes ramas de las ciencias cognitivas ver \cite{intDefs}.} en los grupos de Inteligencia Artificial a partir de la publicación por parte de Alan Turing de \textit{Computing Machinery and Intelligence} en \cite{Turing1950cmi}, las impresiones y técnicas generadas a partir de éste artículo y otros por los investigadores en esta disciplina en la década de 1960 que han tenido un impacto en la vertiente filosófica de este problema y en última instancia proponer una clasificación de los tipos de problemas que se intentan resolver en la disciplina hoy en día contrastándolos con las intenciones de los fundadores de la disciplina en la década de los 60. Se hará una recensión de los problemas que la pregunta \textbf{¿Puede pensar una máquina?} genera, de los tipos de soluciones técnicas que se dan con los problemas que éstas enfrentan, técnicos y matemáticos, y de los nuevos problemas y conclusiones filosóficas a los que nos lleva ésta. Como guía organizativa se ha usado el trabajo de Nils Nilsson\footnote{Investigador en el \textit{Department of Computer Science} de la Universidad de Stanford, inventor de varios algoritmos de gran importancia en redes neuronales y co-creador del algoritmo $A^*$, que permite descubrir el mejor camino más corto entre dos nodos de un grafo mejorando la búsqueda exhaustiva ponderada (conocida como \textit{algoritmo de Dijkstra}) mediante el uso de métricas heurísticas.} \parencite{Nilsson2009} sobre historia de la IA titulado \citetitle{Nilsson2009}.
 \end{abstract}
 \keywords{Turing, artificial intelligence, history, algorithms, cognitive psychology, cybernetics}
 
@@ -83,9 +84,12 @@
 % Set arabic (1,2,3...) page numbering
 \pagenumbering{arabic}
 
+\setlength{\epigraphwidth}{0.8\textwidth}
+
 % Set double spacing for the text
 \DoubleSpacing
-
+\epigraph{``\textit{Intelligence is} what is measured by intelligence tests.''}{E. Boring}
+\newpage
 
 % If the chapter ends in an odd page, you may want to skip having the page
 %  number in the empty page
@@ -98,10 +102,11 @@
 \newpage
 
 
-
 % First enumerated chapter
 %-------------------------------------------------------------------------------
 \chapter{Introducción Histórica a lo Inteligente y lo Artificial}
+
+\epigraph{``\textit{Intelligence is} a very general mental capability that, among other things, involves the ability to reason, plan, solve problems, think abstractly, comprehend complex ideas, learn quickly and learn from experience.''}{Common statement with 52 expert signatories }
 
 Todo lo que llamamos IA comienza con una pregunta de apariencia simple, \textit{¿Es posible construír algo que pueda pensar?}, que en realidad presenta muchas cuestiones asociadas. Esta idea no es en absoluto reciente ni mucho menos, ya que existen leyendas griegas clásicas alrededor del siglo V antes de Cristo bien conocidas de estatuas de Pigmalión traídas a la vida por Afrodita, diosa de la vida y del amor, y de Hefesto, dios de la forja, construyendo ayudantes dorados para los dioses. De todo esto nos llega noticia a través de la \textit{Política} de Aristóteles, que crea probablemente por accidente uno de los primeros ejemplos de ciencia ficción político-social, planteando la cuestión de qué ocurriría si tuviésemos \textit{máquinas/autómatas/seres artificiales} inteligentes:
 
@@ -134,7 +139,9 @@ En última instancia decir que todas las referencias que se han podido compilar 
 
 \chapter{La definición de inteligencia: el nacimiento de las ciencias cognitivas}
 
-La definición de lo que es inteligencia es naturalmente un apartado importante, aunque de difícil solución en el campo de la IA\footnote{Para ver una pequeña lista de definiciones históricas de inteligencia en diferentes ramas de las ciencias cognitivas ver \cite{intDefs}.}. En primer lugar, trataremos de diferenciar la propiedad ``inteligencia'' que nos parece de un platonismo peligroso al declarar que ésta existe como entidad, pero no es designable lingüísticamente ni en el universo físico, y reemplazarla por ``comportamientos inteligentes'' o ``tareas para las que es necesaria inteligencia''. Se predica normalmente que ser inteligente es un atributo humano, aunque si tomamos ciertas definiciones de inteligencia como válidas podemos atribuír inteligencia a todos los seres vivos o incluso a seres carentes de vida como piedras, que, intuitivamente no parecen tener ninguno de los atributos necesarios para la inteligencia. Es por tanto un tema que merece ser tratado con mucho cuidado.
+\epigraph{``[\textit{Intelligence is}] Achieving complex goals in complex environments''}{B. Goertzel }
+
+La definición de lo que es inteligencia es naturalmente un apartado importante, aunque de difícil solución en el campo de la IA. En primer lugar, trataremos de diferenciar la propiedad ``inteligencia'' que nos parece de un platonismo peligroso al declarar que ésta existe como entidad, pero no es designable lingüísticamente ni en el universo físico, y reemplazarla por ``comportamientos inteligentes'' o ``tareas para las que es necesaria inteligencia''. Se predica normalmente que ser inteligente es un atributo humano, aunque si tomamos ciertas definiciones de inteligencia como válidas podemos atribuír inteligencia a todos los seres vivos o incluso a seres carentes de vida como piedras, que, intuitivamente no parecen tener ninguno de los atributos necesarios para la inteligencia. Es por tanto un tema que merece ser tratado con mucho cuidado.
 
 Tal y como se dice en \cite{ciberneticsAshby}: ``La cibernética\footnote{\textit{Cibernética} era, en general, el nombre de lo que hoy referimos como Inteligencia Artificial en los años 50 y 60} es a la máquina real (electrónica, mecánica, neural o económica) lo que la geometría es a los objetos materiales de nuestro espacio terrestre'' y más adelante ``La cibernética es entonces indiferente al reproche de que algunas de las máquinas que estudia no están incluídas en las que encontramos entre nosotros''. Dejando a un lado que Ashby asume que el comportamiento inteligente es claramente mecánico, sacamos de aquí la idea de que la Inteligencia Artificial, en primer lugar, no escapa a la creación de comportamientos inteligentes fuera del ámbito humano pues tal vez no interesa la reproducción de todos los comportamientos a los que atribuiríamos inteligencia y, en segundo lugar, que comportamiento inteligente no es sólamente predicable de seres vivos, al ser la economía la ciencia que estudia las redes de intercambio. Se entiende todo sistema complejo, desde la maquinaria formada por múltiples máquinas simples hasta las redes sociales pasando por los sistemas neuronales como una máquina compleja cuyas leyes son:
 

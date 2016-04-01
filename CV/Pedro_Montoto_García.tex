@@ -1,0 +1,92 @@
+\documentclass[11pt,a4paper]{moderncv}
+
+% moderncv themes
+\moderncvtheme[green]{classic}                  % optional argument are 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
+%\moderncvtheme[green]{classic}                % idem
+
+% character encoding
+\usepackage[utf8]{inputenc}                   % replace by the encoding you are using
+
+% adjust the page margins
+\usepackage[scale=0.8]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}						% if you want to change the width of the column with the dates
+%\AtBeginDocument{\setlength{\maketitlenamewidth}{6cm}}  % only for the classic theme, if you want to change the width of your name placeholder (to leave more space for your address details
+%\AtBeginDocument{\recomputelengths}                     % required when changes are made to page layout lengths
+
+
+% personal data
+\firstname{Pedro}
+\familyname{Montoto García}
+%\title{Resumé title (optional)}               % optional, remove the line if not wanted
+\address{Camiño Real 32, Bermés}{36517 Lalín, Spain}    % optional, remove the line if not wanted
+%\mobile{+30 698 4385057}                    % optional, remove the line if not wanted
+\phone{+34 620 575581}                      % optional, remove the line if not wanted
+%\fax{fax (optional)}                          % optional, remove the line if not wanted
+\email{pmgberm@gmail.com}                      % optional, remove the line if not wanted
+%\email{\href{mailto:s.dakourou@gmail.com}{s.dakourou@gmail.com}}                      % optional, remove the line if not wanted
+%\homepage{http://gr.linkedin.com/pub/stefania-dakourou/41/21a/396}%{LinkedIn Profile}}                % optional, remove the line if not wanted
+%\extrainfo{additional information (optional)} % optional, remove the line if not wanted
+%\photo[64pt][0.4pt]{picture}                         % '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file; optional, remove the line if not wanted
+%\quote{Some quote (optional)}                 % optional, remove the line if not wanted
+
+% to show numerical labels in the bibliography; only useful if you make citations in your resume
+\makeatletter
+\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+\makeatother
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+
+%\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+\maketitle
+
+I'm a product-oriented engineer with experience in logistics, investment and data analysis projects. Diversity of roles and environments, as I believe, makes you a better leader and that's one of my main objectives.
+
+Tooling of choice I have experience with is Node, Ruby, Rails, Java, Spring, Hibernate, Oracle DB, MySQL, MongoDB, AWS, Bash, Git and sometimes Excel. Contributed to Apache Software Foundation projects.
+
+I'm also interested on the applications of Cognitive Psychology and AI, specially in (serious) games.
+
+\section{Experience}
+\cventry{Ongoing}{Various Projects}{Self-started}{}{}{Coded various open-source projects: \url{https://github.com/McOmghall} \\ Invested and started a new farming operation, including experiments on viability of new crops. \\ Invested money on Spanish companies, managing to get an average 3\% ROI MoM. \\ Designed branding and internal culture for a Maker association at the Galician level.}
+\cventry{Sep 2015}{Volunteer Programmer}{nucl.ai}{}{}{Wrote code to use as examples in The Principles of Modern Game AI course: \\ \url{http://courses.nucl.ai/}}
+\cventry{Sep 2015\\Sep 2014}{Research Assistant Software Engineer}{University of A Coruña}{}{}{Worked along the research team on multiple projects: websites for energy distribution, machine learning over water cleaning facilities' data, heart prosthetic individualized prototypes and others.}
+\cventry{Jun 2014\\Apr 2014}{Software Engineer}{Set Pay}{Santiago de Compostela}{}{Built a microservice architecture template as a base for future developments}
+\cventry{Mar 2014\\Jul 2013}{Business Intelligence Engineer Intern}{Amazon EU}{Luxembourg}{}{Owned various reporting processes, ETL tasks, Excel expreadsheet management and Ruby on Rails on-website reporting.}
+\cventry{Jun 2013\\Aug 2012}{Software Engineer}{Indra}{Madrid}{}{Development of banking and stock market web services and web portals under J2EE technologies: Spring, Hibernate/JPA.}
+\cventry{Sep 2011\\May 2011}{Research Assistant Software Engineer}{Universidade de Santiago de Compostela}{}{}{Academic environment, developing software for research on new logic systems.}
+
+\section{Education}
+%\cventry{year--year}{Degree}{Institution}{City}{\textit{Grade}}{Description}
+\cventry{2011 - 2016}{Master in Logic and the Philosophy of Science}{University of Santiago de Compostela}{}{}{Cognitive Psychology, Metamathematics, Rationality, Microeconomics, Argumentation Theory and Artificial Intelligence}
+\cventry{2007 - 2011}{Degree in Computer Science}{University of Santiago de Compostela}{}{\textit{6.4/10}}{Project Management, Network and Systems administration, Optimization, Artificial Intelligence}
+
+\section{Master Thesis}
+\cvline{Title}{\emph{The concept of intelligence after Computing Machinery and Intelligence: a historical perspective}.}
+\cvline{Supervisor}{Enrique Alonso González, UAM}
+\cvline{Description}{\small An analysis on the future of the concept of intelligence from the perspective of the cognitive sciences, especially AI}
+\cvline{WIP}{\url{https://github.com/McOmghall/ml-wip/tree/master/AI_comment}}
+
+\section{Bachelor Thesis}
+\cvline{Title}{\emph{Library for the execution of fuzzy quantified syllogisms}}
+\cvline{Supervisors}{Alberto Bugarín Diz, Martín Pereira Fariña}
+\cvline{Description}{\small Starting as a part of a research program on optimization-based logic systems. Implemented on Java, Linear and Non-linear optimization techniques, parsing tools (ANTLR) and the PMP project management system.}
+\cvline{Paper}{\url{http://citius.usc.es/investigacion/publicacions/listado?106}}
+
+\section{Languages}
+\cvlanguage{Galician}{Native}{}
+\cvlanguage{Spanish}{Native}{}
+\cvlanguage{Portuguese}{Fluent}{}
+\cvlanguage{English}{Fluent}{TOEFL, 108/120, License: 11069417}
+\cvlanguage{Japanese}{Basic}{}
+
+\section{Qualities}
+\cvline{Personal skills:}{Good software engineering skills, strong analytical, problem-solving and communication skills, eager to learn and develop new skills, project management and people management experience}
+\cvline{Experience with:}{Design (architectural and graphic), programming and project management techniques and tools}
+\cvline{International Experience:}{Lived between Spain, Luxembourg and Great Britain during the last 3 years. Business travel to neighboring countries.}
+
+\end{document}

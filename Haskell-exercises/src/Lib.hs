@@ -27,3 +27,10 @@ problem3 :: Int -> Int
 problem3 factorize =
   let primeFactors = (filter (\x -> factorize `mod` x == 0) . takeWhile (\x -> x*x < factorize)) generatePrimes
   in maximum primeFactors
+
+-- https://projecteuler.net/problem=4
+problem4 = 
+  let threeDigitNumbers = [100..999]
+      combinatorial = [x * y | x <- threeDigitNumbers, y <- threeDigitNumbers]
+      isPalindrome = \x -> (show x) == ((reverse . show) x)
+  in (maximum . filter isPalindrome) combinatorial

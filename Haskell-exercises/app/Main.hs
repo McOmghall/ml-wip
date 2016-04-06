@@ -1,6 +1,6 @@
 module Main where
 
-import Lib
+import Euler
 
 main :: IO ()
-main = someFunc
+main = putStrLn "Run test"

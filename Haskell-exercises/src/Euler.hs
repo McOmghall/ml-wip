@@ -36,3 +36,5 @@ problem4 =
 -- https://projecteuler.net/problem=5
 problem5 = foldl lcm 1 [2..20]
 
+problem6 = ((sum [1..100]) ^ 2) - (sum $ map (^2) [1..100]) 
+

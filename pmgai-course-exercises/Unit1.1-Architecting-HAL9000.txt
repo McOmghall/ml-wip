@@ -1,0 +1,42 @@
+Architecting HAL9000
+====================
+
+----
+
+Computation Phases
+==================
+
+* Sense
+
+    - User text inputs.
+	- Door states.
+	- Lighting states.
+	- Life support states.
+	- Ship position in space.
+
+* Think
+
+    - Comment on how not in control the human is.
+	- Turn off lights randomely to scare the human.
+	- Turn off oxygen support on rooms to show you're really in control.
+	- Close and open doors to challenge and threaten the human.
+	- Throw ship into the sun if the human becomes too cocky.
+
+* Act
+    
+   - Output text in console.
+   - Manage doors of the ship.
+   - Manage life support systems.
+   - Manage lighting systems.
+   - Manage ship navigation.
+
+----
+
+Functional Layers
+=================
+
+Console
+    It manages text inputs and outputs to the human.
+
+Ship systems
+    Controls ship doors, movement, lighting and life support.

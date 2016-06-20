@@ -1,0 +1,28 @@
+Interfacing with HAL9000
+========================
+
+----
+
+External Data vs. Internal Memory
+=================================
+
+* Internal Memory
+
+    - Human inputs into the console. Useful for tracking and making informed decisions about human psyche.
+
+* External Data
+
+    - Everything else: ship state, human position...
+
+----
+
+Push vs. Pull
+=============
+
+* Polling
+
+    - Everytime the human inputs stuff in the console, read it, respond in real time.
+
+* Events
+
+    - Human enters a room, human operates ship controls, human tries to turn on lights after shutdown...

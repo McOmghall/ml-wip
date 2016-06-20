@@ -1,0 +1,8 @@
+HAL9000's Thought Processes
+===========================
+
+Rethoric and argumentation
+    Hal has a process that decides what to respond to human queries and comments through the in-game console. This is a pull process.
+
+Scare
+	Hal decides the best way to scare the human acting on the ship's systems. This is a push process.

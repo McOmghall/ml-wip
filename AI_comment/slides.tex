@@ -34,7 +34,7 @@
 
 \title[Intelligence after CMI]{La noción de inteligencia después de\\ \textit{Computing Machinery and Intelligence}} % The short title appears at the bottom of every slide, the full title is only on the title page
 
-\author{Pedro Montoto García} % Your name
+\author{Pedro Montoto García\\Enrique Alonso González} % Your name
 \institute[USC]{Universidade de Santiago de Compostela}
 \date{}
 
@@ -45,145 +45,151 @@
 \end{frame}
 
 \begin{frame}
+	\frametitle{El Juego de la Imitación: Alan Turing}
+\begin{center}
+    \includegraphics[width=0.7\textwidth]{turing}
+    
+    Alan M. Turing (1912-1954)
+   
+    \textit{¿Puede pensar una máquina?}: \textit{Computing Machinery and Intelligence}(1950)	
+    
+    
+\end{center}
+\end{frame}
+
+\begin{frame}
 	\frametitle{El Juego de la Imitación}
-	\tableofcontents
-\end{frame}
-
-\begin{frame}
-	\section{Descripción}
-	\frametitle{Descripción: Test de Turing}
+\begin{center}
+    \includegraphics[width=0.7\textwidth]{imitation_game}
+\end{center}
 \end{frame}
 
 %------------------------------------------------
 
 \begin{frame}
-\frametitle{Bullet Points}
-\begin{itemize}
-\item Lorem ipsum dolor sit amet, consectetur adipiscing elit
-\item Aliquam blandit faucibus nisi, sit amet dapibus enim tempus eu
-\item Nulla commodo, erat quis gravida posuere, elit lacus lobortis est, quis porttitor odio mauris at libero
-\item Nam cursus est eget velit posuere pellentesque
-\item Vestibulum faucibus velit a augue condimentum quis convallis nulla gravida
-\end{itemize}
+\frametitle{Argumento por analogía}
+
+Implícitamente:
+
+\begin{center}
+\textit{Si} una \textbf{máquina} \textit{puede hacerse pasar} por una \textbf{persona}, \\ una máquina puede \textbf{pensar} como una persona
+
+\hfill
+\hfill
+\hfill
+\hfill
+
+\scalebox{3}{$\Uparrow$}
+
+\hfill
+\hfill
+\hfill
+\hfill
+
+\textit{Si} un \textbf{hombre} \textit{puede hacerse pasar} por una \textbf{mujer}, \\ un hombre puede \textbf{pensar} como una mujer
+\end{center}
+
 \end{frame}
 
 %------------------------------------------------
 
 \begin{frame}
-\frametitle{Blocks of Highlighted Text}
-\begin{block}{Block 1}
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lectus nisl, ultricies in feugiat rutrum, porttitor sit amet augue. Aliquam ut tortor mauris. Sed volutpat ante purus, quis accumsan dolor.
+\frametitle{Premisas implícitas}
+\begin{block}{Test Indirecto}
+``Entre lenguaje y pensamiento existe una relación directa''
 \end{block}
 
-\begin{block}{Block 2}
-Pellentesque sed tellus purus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vestibulum quis magna at risus dictum tempor eu vitae velit.
+\begin{block}{Imitación}
+``Ser capaz de imitar una característica es evidencia de poseer dicha característica'' 
 \end{block}
 
-\begin{block}{Block 3}
-Suspendisse tincidunt sagittis gravida. Curabitur condimentum, enim sed venenatis rutrum, ipsum neque consectetur orci, sed blandit justo nisi ac lacus.
+\begin{block}{Subjetivismo}
+``La identificación subjetiva de una característica es evidencia de poseer dicha característica''
 \end{block}
 \end{frame}
 
 %------------------------------------------------
 
 \begin{frame}
-\frametitle{Multiple Columns}
-\begin{columns}[c] % The "c" option specifies centered vertical alignment while the "t" option is used for top vertical alignment
+\frametitle{Resultados}
+Aceptando las condiciones anteriores, el argumento de Turing resulta en:
+\begin{center}
+\textit{Si} una \textbf{máquina pasa el TT} dicha máquina es \textbf{capaz de pensar}
+\end{center}
 
-\column{.45\textwidth} % Left column and width
-\textbf{Heading}
-\begin{enumerate}
-\item Statement
-\item Explanation
-\item Example
-\end{enumerate}
-
-\column{.5\textwidth} % Right column and width
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lectus nisl, ultricies in feugiat rutrum, porttitor sit amet augue. Aliquam ut tortor mauris. Sed volutpat ante purus, quis accumsan dolor.
-
-\end{columns}
 \end{frame}
 
 %------------------------------------------------
-\section{Second Section}
-%------------------------------------------------
 
 \begin{frame}
-\frametitle{Table}
-\begin{table}
-\begin{tabular}{l l l}
-\toprule
-\textbf{Treatments} & \textbf{Response 1} & \textbf{Response 2}\\
-\midrule
-Treatment 1 & 0.0003262 & 0.562 \\
-Treatment 2 & 0.0015681 & 0.910 \\
-Treatment 3 & 0.0009271 & 0.296 \\
-\bottomrule
+\frametitle{Jerarquía de Tests de Turing (Harnad, 2000)}
+
+\begin{footnotesize}
+\begin{center}
+\begin{tabular}{l | c | c}
+    Objeción & & Nombre \\
+    \hline
+    & {\usebeamercolor[fg]{structure} t1} & Modelos de Juguete (Subconjuntos) \\
+    & {\usebeamercolor[fg]{structure} T2} & Test de Turing tradicional y variantes \\
+    Habitación China & {\usebeamercolor[fg]{structure} (ST)} & Variante Searleana del TT  tradicional \\
+    Sensorimotor $\not =$ simbólico & {\usebeamercolor[fg]{structure} T3} & Total/Robot Turing Test \\
+    + Equivalencia Microfuncional & {\usebeamercolor[fg]{structure} T4} & Human Robot Turing Test \\
+    + Auto-preservación & {\usebeamercolor[fg]{structure} (T4+)} & Truly Total Turing Test\footnote{No recogido en el artículo} \\
+    Teoría Total & {\usebeamercolor[fg]{structure} T5} & Imitación perfecta \\
 \end{tabular}
-\caption{Table caption}
-\end{table}
+\end{center}
+\end{footnotesize}
+
 \end{frame}
 
-%------------------------------------------------
 
 \begin{frame}
-\frametitle{Theorem}
-\begin{theorem}[Mass--energy equivalence]
-$E = mc^2$
-\end{theorem}
-\end{frame}
-
-%------------------------------------------------
-
-\begin{frame}[fragile] % Need to use the fragile option when verbatim is used in the slide
-\frametitle{Verbatim}
-\begin{example}[Theorem Slide Code]
-\begin{verbatim}
-\begin{frame}
-\frametitle{Theorem}
-\begin{theorem}[Mass--energy equivalence]
-$E = mc^2$
-\end{theorem}
-\end{frame}\end{verbatim}
-\end{example}
-\end{frame}
-
-%------------------------------------------------
-
-\begin{frame}
-\frametitle{Figure}
-Uncomment the code on this slide to include your own image from the same directory as the template .TeX file.
-%\begin{figure}
-%\includegraphics[width=0.8\linewidth]{test}
-%\end{figure}
-\end{frame}
-
-%------------------------------------------------
-
-\begin{frame}[fragile] % Need to use the fragile option when verbatim is used in the slide
-\frametitle{Citation}
-An example of the \verb|\cite| command to cite within the presentation:\\~
-
-This statement requires citation \cite{p1}.
-\end{frame}
-
-%------------------------------------------------
-
-\begin{frame}
-\frametitle{References}
-\footnotesize{
-\begin{thebibliography}{99} % Beamer does not support BibTeX so references must be inserted manually as below
-\bibitem[Smith, 2012]{p1} John Smith (2012)
-\newblock Title of the publication
-\newblock \emph{Journal Name} 12(3), 45 -- 678.
-\end{thebibliography}
+\frametitle{Otras objecciones: el método no es adecuado
 }
+\begin{itemize}
+    \item Problema: Falsos positivos y negativos
+    \begin{itemize}
+        \item Ej: La máquina de pisar pies
+        \item Ej: Inteligencias no humanas (test de gaviotas)
+        \item Ej: Falibilidad humana (en imitación y detección)
+        \item Causa: Un único test no es fiable
+        \begin{itemize}
+            \item Solución A: Múltiples jueces
+            \item Solucion B: Test continuado/repetición en el tiempo
+        \end{itemize}
+    \end{itemize}
+    \item Problema: Arbitrariedad
+    \begin{itemize}
+        \item Solución: Test estandardizado repetible
+    \end{itemize}
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Conclusiones}
+
+\begin{itemize}
+    \item Limitaciones en forma y asunciones
+    \begin{itemize}
+        \item Siendo conscientes de ellas, pueden preverse errores
+        \item La evaluación de cada caso de test permite mejorarlo (meta-evaluación)
+    \end{itemize}
+    \item Inteligencia como algo arbitrario
+    \begin{itemize}
+        \item Se hace necesaria una descripción fenomenológica
+        \item El test debe incorporarla
+    \end{itemize}
+    \item Sin embargo, es una definición operativa
+\end{itemize}
+
 \end{frame}
 
 %------------------------------------------------
 
 \begin{frame}
-\Huge{\centerline{The End}}
+\frametitle{Cierre y preguntas}
+\Huge{\centerline{Gracias por su atención!}}
 \end{frame}
 
 %----------------------------------------------------------------------------------------

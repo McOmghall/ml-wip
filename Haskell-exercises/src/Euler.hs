@@ -65,3 +65,7 @@ module Euler where
         lambdaTriples = \n -> [(n, y, z) | y <- filter (\e -> (e > n) && (e + n < top)) range, z <- filter (\e -> (e > y) && (e + n + y == top)) range, (n^2 + y^2 == z^2)]
         triple = find (\e -> length e > 0) . map lambdaTriples $ range
     in (\(x, y, z) -> x * y * z) . head . fromJust $ triple
+ 
+  -- https://projecteuler.net/problem=10
+  problem10 = sum $ takeWhile (< 2 * 10^6) generatePrimes
+    

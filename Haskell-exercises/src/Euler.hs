@@ -4,6 +4,7 @@ module Euler where
   import Data.Char (digitToInt)
   import Data.Maybe as Maybe
   import Data.Either (either)
+  import qualified Data.Set as Set
   import qualified Data.Text as Text
   import qualified Data.Text.Read as Read
   import qualified Data.Matrix as Matrix
@@ -21,17 +22,19 @@ module Euler where
     in sum (filter (even) fibs)
 
   -- https://projecteuler.net/problem=3
-  generatePrimes :: [Int]
+  generatePrimes :: [Integer]
   generatePrimes = 2 : primes
     where isPrime (p:ps) n = p*p > n || n `rem` p /= 0 && isPrime ps n
           primes = 3 : filter (isPrime primes) [5, 7 ..]
 
-  problem3solver :: Int -> Int
-  problem3solver factorize =
-    let primeFactors = (filter (\x -> factorize `mod` x == 0) . takeWhile (\x -> x*x < factorize)) generatePrimes
-    in maximum primeFactors
+  primeFactors :: Integer -> [Integer]
+  primeFactors 1 = []
+  primeFactors n
+    | factors == []  = [n]
+    | otherwise = factors ++ primeFactors (n `div` (head factors))
+    where factors = take 1 $ filter (\x -> (n `mod` x) == 0) [2 .. n-1]
 
-  problem3 = problem3solver 600851475143
+  problem3 = maximum (primeFactors 600851475143)
 
   -- https://projecteuler.net/problem=4
   problem4 = 
@@ -85,3 +88,25 @@ module Euler where
         removeHasNothing                 = \lOfLists -> map Maybe.catMaybes $ filter (foldl (\a e -> a && Maybe.isJust e) True) lOfLists
         getMaxProductFromPosition        = \l x y ->  maximum . map product . removeHasNothing $ map (map (\e -> Matrix.safeGet (fst e) (snd e) matrix)) (getArraysFromPosition l x y)
     in maximum . mapMatrixIndexes $ getMaxProductFromPosition 4 
+
+  -- https://projecteuler.net/problem=12
+  nubOrd :: Ord a => [a] -> [a] 
+  nubOrd xs = go Set.empty xs 
+    where 
+      go s (x:xs)
+            | x `Set.member` s = go s xs
+            | otherwise        = x : go (Set.insert x s) xs
+      go _ _                   = []
+
+  factors :: Integer -> [Integer]
+  factors 1 = [1]
+  factors n =
+    let primes   = primeFactors n
+        embiggen = \s -> nubOrd (s ++ map (\e -> fst e * snd e) [(x, y) | x <- s, y <- s, (x * y <= n) && (n `mod` (x * y) == 0)])
+        closure  = fromJust . find (\e -> maximum e == n) $ iterate embiggen primes
+    in 1:closure
+
+  problem12 = 
+    let triangleNumbers = \n -> sum [1..n]
+    in maximum . fromJust . find ((<) 500 . length) $ map factors $ map triangleNumbers [1..]
+        

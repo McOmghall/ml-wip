@@ -32,5 +32,6 @@ tests = [
                ,testCase "Problem 9" (assertEqual "Not solved" Euler.problem9 31875000)
                ,testCase "Problem 10" (assertEqual "Not solved" Euler.problem10 142913828922)
                ,testCase "Problem 11" (assertEqual "Not solved" Euler.problem11 70600674)
+               ,testCase "Problem 12" (assertEqual "Not solved" Euler.problem12 76576500)
             ]
     ]

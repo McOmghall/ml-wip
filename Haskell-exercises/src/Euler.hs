@@ -1,13 +1,15 @@
 module Euler where
 
-  import Data.List (find)
+  import Data.List (find, maximumBy)
   import Data.Char (digitToInt)
+  import Data.Ord
   import Data.Maybe as Maybe
   import Data.Either (either)
   import qualified Data.Set as Set
   import qualified Data.Text as Text
   import qualified Data.Text.Read as Read
   import qualified Data.Matrix as Matrix
+  import Collatz
 
   -- Problems from https://projecteuler.net
   -- https://projecteuler.net/problem=1
@@ -110,7 +112,7 @@ module Euler where
     let triangleNumbers = \n -> sum [1..n]
     in maximum . fromJust . find ((<) 500 . length) $ map factors $ map triangleNumbers [1..]
         
-  -- https://projecteuler.net/problem=12
+  -- https://projecteuler.net/problem=13
   numbers :: [Integer]
   numbers = [ 37107287533902102798797998220837590246510135740250
             , 46376937677490009712648124896970078050417018260538
@@ -214,3 +216,6 @@ module Euler where
             , 53503534226472524250874054075591789781264330331690 ]
   
   problem13 = ((read::[Char] -> Integer) . take 10 . show . sum) numbers
+  
+  -- https://projecteuler.net/problem=14
+  problem14 = snd . maximumBy (comparing fst) $ map (\i -> (length . collatzDownwardSeries $ i, i)) [1..10^6]

@@ -20,6 +20,8 @@ library
                      , text
                      , matrix
                      , containers
+                     , utility-ht
+                     , fgl
   default-language:    Haskell2010
 
 executable Haskell-exercises-exe

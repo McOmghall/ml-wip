@@ -33,23 +33,29 @@ collatzDownwardSeries n =
   let next = div2 n
   in [n] ++ collatzDownwardSeries (fromMaybe (times3plus1 n) next)
   
-data CollatzElement = JustReverseDiv2 Integer | BothExpressions Integer Integer deriving (Show)
+data CollatzElement = JustReverseDiv2 Integer | BothExpressions Integer Integer | Endless Integer deriving (Show)
 
 nextCollatz :: Integer -> CollatzElement
 nextCollatz n
-  | guard     = JustReverseDiv2 next2
-  | otherwise = BothExpressions next2 next3
+  | isEndless  = Endless next2
+  | hasNoNext3 = JustReverseDiv2 next2
+  | otherwise  = BothExpressions next2 next3
   where next3Maybe = reverseTimes3Plus1 n
-        guard      = isNothing (next3Maybe)
+        hasNoNext3 = isNothing (next3Maybe)
+        isEndless  = hasNoNext3 && (n `mod` 3 == 0)
         next2      = reverseDiv2 n
         next3      = fromMaybe 0 (next3Maybe)
  
 collatzElementToArray :: CollatzElement -> [Integer]
-collatzElementToArray (JustReverseDiv2 a) = [a]
+collatzElementToArray (JustReverseDiv2 a)   = [a]
+collatzElementToArray (Endless a)           = [a]
 collatzElementToArray (BothExpressions a b) = [a, b]
 
 nextCollatzArray :: Integer -> [Integer]
 nextCollatzArray = collatzElementToArray . nextCollatz
+
+collatzFirstRightSeries :: Integer -> [Integer]
+collatzFirstRightSeries n = n : (collatzFirstRightSeries . last . nextCollatzArray) n
 
 collatzTree :: Integer -> Tree Integer
 collatzTree n = unfoldTree (\x -> (x, nextCollatzArray x)) n
@@ -58,6 +64,10 @@ collatzUpwards :: Integer -> (Integer, CollatzElement)
 collatzUpwards n = (n, nextCollatz n)
 
 collatzToEdges :: (Integer, CollatzElement) -> (LNode String, [LEdge String])
+collatzToEdges (from, Endless to) = ((fromInt, show from), [(fromInt, toInt, label)])
+  where fromInt = fromIntegral from
+        toInt   = fromIntegral to
+        label   = "endless"
 collatzToEdges (from, JustReverseDiv2 to) = ((fromInt, show from), [(fromInt, toInt, label)])
   where fromInt = fromIntegral from
         toInt   = fromIntegral to
@@ -78,8 +88,5 @@ addNodesAndEdges g n = insEdges (snd n) (insNode (fst n) g)
 collatzGraph :: Integer -> Gr String String
 collatzGraph n = foldl (\g n -> addNodesAndEdges g . collatzUpwardsToEdges $ n) empty [1..n]
 
-collatzFirstRightSeries :: CollatzElement -> [Integer]
-collatzFirstRightSeries (JustReverseDiv2 n) = n : collatzFirstRightSeries (nextCollatz n)
-collatzFirstRightSeries (BothExpressions _ n) = n : collatzFirstRightSeries (nextCollatz n)
-
-collatzSequences = mapM print $ map collatzDownwardSeries [1..]
+collatzSequences n = mapM print $ map collatzDownwardSeries [1..n]
+collatzUpwardSequences n = mapM print $ map collatzUpwards [1..n]

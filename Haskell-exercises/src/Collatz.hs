@@ -5,6 +5,7 @@ import Data.Maybe
 import Data.Bool.HT
 import Data.Graph.Inductive.Graph
 import Data.Graph.Inductive.PatriciaTree
+import Data.Tree
 
 times3plus1 :: Integer -> Integer
 times3plus1 n = 3 * n + 1
@@ -36,15 +37,37 @@ data CollatzElement = JustReverseDiv2 Integer | BothExpressions Integer Integer 
 
 nextCollatz :: Integer -> CollatzElement
 nextCollatz n
-  | isNothing (reverseTimes3Plus1 n) = JustReverseDiv2 (reverseDiv2 n)
-  | otherwise                        = BothExpressions (reverseDiv2 n) (fromJust (reverseTimes3Plus1 n))
-  
+  | guard     = JustReverseDiv2 next2
+  | otherwise = BothExpressions next2 next3
+  where next3Maybe = reverseTimes3Plus1 n
+        guard      = isNothing (next3Maybe)
+        next2      = reverseDiv2 n
+        next3      = fromMaybe 0 (next3Maybe)
+ 
+collatzElementToArray :: CollatzElement -> [Integer]
+collatzElementToArray (JustReverseDiv2 a) = [a]
+collatzElementToArray (BothExpressions a b) = [a, b]
+
+nextCollatzArray :: Integer -> [Integer]
+nextCollatzArray = collatzElementToArray . nextCollatz
+
+collatzTree :: Integer -> Tree Integer
+collatzTree n = unfoldTree (\x -> (x, nextCollatzArray x)) n
+
 collatzUpwards :: Integer -> (Integer, CollatzElement)
 collatzUpwards n = (n, nextCollatz n)
 
 collatzToEdges :: (Integer, CollatzElement) -> (LNode String, [LEdge String])
-collatzToEdges (from, JustReverseDiv2 to) = ((fromIntegral from, show from), [(fromIntegral from, fromIntegral to, "x*2")])
-collatzToEdges (from, BothExpressions to1 to2) = ((fromIntegral from, show from), [(fromIntegral from, fromIntegral to1, "x*2"), (fromIntegral from, fromIntegral to2, "(x-1)/3")])
+collatzToEdges (from, JustReverseDiv2 to) = ((fromInt, show from), [(fromInt, toInt, label)])
+  where fromInt = fromIntegral from
+        toInt   = fromIntegral to
+        label   = "x*2"
+collatzToEdges (from, BothExpressions to1 to2) = ((fromInt, show from), [(fromInt, toInt1, label1), (fromInt, toInt2, label2)])
+  where fromInt = fromIntegral from
+        toInt1  = fromIntegral to1
+        toInt2  = fromIntegral to2
+        label1  = "x*2"
+        label2  = "(x-1)/3"
 
 collatzUpwardsToEdges :: Integer -> (LNode String, [LEdge String])
 collatzUpwardsToEdges = collatzToEdges . collatzUpwards
@@ -54,5 +77,9 @@ addNodesAndEdges g n = insEdges (snd n) (insNode (fst n) g)
 
 collatzGraph :: Integer -> Gr String String
 collatzGraph n = foldl (\g n -> addNodesAndEdges g . collatzUpwardsToEdges $ n) empty [1..n]
+
+collatzFirstRightSeries :: CollatzElement -> [Integer]
+collatzFirstRightSeries (JustReverseDiv2 n) = n : collatzFirstRightSeries (nextCollatz n)
+collatzFirstRightSeries (BothExpressions _ n) = n : collatzFirstRightSeries (nextCollatz n)
 
 collatzSequences = mapM print $ map collatzDownwardSeries [1..]

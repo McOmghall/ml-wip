@@ -219,3 +219,30 @@ module Euler where
   
   -- https://projecteuler.net/problem=14
   problem14 = snd . maximumBy (comparing fst) $ map (\i -> (length . collatzDownwardSeries $ i, i)) [1..10^6]
+
+  -- https://projecteuler.net/problem=15
+  addMatrices :: (Num a) => Matrix.Matrix a -> Matrix.Matrix a -> Matrix.Matrix a
+  addMatrices x y = Matrix.elementwise (+) x y
+  
+  valueOf :: Matrix.Matrix Integer -> (Int, Int) -> Integer
+  valueOf m p = sum $ mapMaybe (\x -> Matrix.safeGet (fst x) (snd x) m) [p, left p, up p]
+    where left p = (fst p - 1, snd p)
+          up p   = (fst p, snd p - 1)
+
+  bigger :: Matrix.Matrix Integer -> Matrix.Matrix Integer
+  bigger m = compositeMapOn $ Matrix.extendTo 0 newRowSize newColumnSize m
+    where newRowSize          = (Matrix.nrows m + 1)
+          newColumnSize       = (Matrix.ncols m + 1)
+          orderOfRowsInColumn = [(x, y) | x <- [newColumnSize], y <- [1..newRowSize - 1]]
+          orderOfColumnsInRow = [(x, y) | x <- [1..newColumnSize - 1], y <- [newRowSize]]
+          mapOn a m           = foldl (\nm p -> Matrix.unsafeSet (valueOf nm p) p nm) m a
+          compositeMapOn m    = ((mapOn [(newRowSize, newColumnSize)]) . (mapOn orderOfColumnsInRow) . (mapOn orderOfRowsInColumn)) m
+
+  problem15 =
+    let dimension    = 20 + 1
+        matrixDims   = (dimension, dimension)
+        initialPoint = (1, 1)
+        initialCount = Matrix.identity 1 :: Matrix.Matrix Integer
+        resultMatrix = (iterate bigger initialCount) !! dimension
+    in Matrix.unsafeGet dimension dimension resultMatrix 
+  

@@ -246,3 +246,5 @@ module Euler where
         resultMatrix = (iterate bigger initialCount) !! dimension
     in Matrix.unsafeGet dimension dimension resultMatrix 
   
+  -- https://projecteuler.net/problem=16
+  problem16 = (sum . (map digitToInt) . show) (2 ^ 1000)

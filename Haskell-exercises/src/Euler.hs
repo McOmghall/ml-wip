@@ -9,7 +9,9 @@ module Euler where
   import qualified Data.Text as Text
   import qualified Data.Text.Read as Read
   import qualified Data.Matrix as Matrix
+
   import Collatz
+  import Wittgenstein
 
   -- Problems from https://projecteuler.net
   -- https://projecteuler.net/problem=1
@@ -248,3 +250,7 @@ module Euler where
   
   -- https://projecteuler.net/problem=16
   problem16 = (sum . (map digitToInt) . show) (2 ^ 1000)
+
+  -- https://projecteuler.net/problem=17
+  problem17 = sum $ map (length . destroyUselessCharacters . num2wstr') [1..1000]
+    where destroyUselessCharacters xs = [ x | x <- xs, not (x `elem` ",.?!-:;\"\' ") ]

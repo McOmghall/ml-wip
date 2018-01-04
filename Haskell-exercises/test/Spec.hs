@@ -37,5 +37,6 @@ tests = [
                ,testCase "Problem 14" (assertEqual "Not solved" Euler.problem14 837799)
                ,testCase "Problem 15" (assertEqual "Not solved" Euler.problem15 137846528820)
                ,testCase "Problem 16" (assertEqual "Not solved" Euler.problem16 1366)
+               ,testCase "Problem 17" (assertEqual "Not solved" Euler.problem17 18451)  -- Not really solved, Euler project doesn't specify a validation algorithm for the number strings, therefore it's impossible to know what the error is
             ]
     ]

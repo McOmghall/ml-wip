@@ -6,6 +6,7 @@
 
 % character encoding
 \usepackage[utf8]{inputenc}                   % replace by the encoding you are using
+\addpenalty{-1000}
 
 % adjust the page margins
 \usepackage[scale=0.9]{geometry}
@@ -18,7 +19,7 @@
     {\bfseries#3}%
     \ifthenelse{\equal{#4}{}}{}{\newline{\slshape#4}}%
     \ifthenelse{\equal{#5}{}}{}{, #5}%
-    \ifthenelse{\equal{#6}{}}{}{, #6}%
+    \ifthenelse{\equal{#6}{}}{}{\newline #6}%
     \strut%
     \ifx&#7&%
     \else{\newline{}\begin{minipage}[t]{\linewidth}\small#7\end{minipage}}\fi}}
@@ -68,28 +69,30 @@ I have experience with the \textbf{Unreal Engine} for game development, having u
 \cvline{}{Experience with data analysis to drive business processes}
 \cvline{}{Worked in different parts of Spain, Luxembourg and Great Britain}
 
-\section{Experience}
-\cventry{Today \\ Sep 2016}{Independent Game Designer and Developer}{}{}{}{Currently developing casual arcade games as a Technical Game Designer within a team of 14 people since January 2018. Here is a small showcase of my work during this period:\vspace{0.25cm}\\
-{\large \textbf{\textit{Darkborn}}} \\
-\url{http://bit.ly/darkborn-demo} (Can send source code on request). \\
-A single player fast-paced \textbf{Hack\&Slash} built around a playstyle switch mechanic. \\
-Worked as the technical go-to person for the design team, developed the concept and core gameplay mechanics using mainly prototyping methods (UE4 Blueprints and C++). \\
+\section{Selected Recent Works}
+\cventry{Nov 2017 \\ Feb 2017}{Darkborn}{Master's in Game Design Capstone Project}{}{\url{http://bit.ly/darkborn-demo} (Can send source code on request)}{A single player fast-paced \textbf{Hack\&Slash} built around a playstyle switch mechanic. \\
+Worked as the technical go-to person for the design team, developed the concept and core gameplay mechanics using mainly prototyping methods (\textbf{UE4 Blueprints and C++}). \\
 Main responsible for the sound design of the game. \\
 Also contributed prototypes and tweaks for animation and VFX reference in-engine. \\ 		
-Team composed of 5 designers, 5 artists and 6 programmers. Capstone project for MsC Game Design @ U-Tad.\vspace{0.25cm}\\
-%
-{\large \textbf{\textit{A Fireball for your Friends}}} \\
-\url{http://bit.ly/fireball-prototype} (Source: \url{http://bit.ly/fireball-code}) \\
-A \textbf{combat} prototype for an online multiplayer $3^{rd}$ person \textbf{magic duel game} with a focus on customization \\
-	Built by myself on my free time (January 2018). Created a spell system with the objective of fast and easy iteration, a sample level, and a very tough enemy AI using only UE4 Blueprints and free assets from the UE4 store.\vspace{0.25cm}\\
-%
-{\large \textbf{\textit{Wrong Side - A TF2 CTF Level}}} \\
-\url{http://bit.ly/wrong-side} \\
-A Team Fortress 2 level focused on being fun on small servers (small number of players) \\
-	Built by myself on my free time (February 2018) in 2 weeks without prior knowledge of the Source engine.
+Team composed of 5 designers, 5 artists and 6 programmers. Capstone project for MsC Game Design @ U-Tad.
 }
-\vspace{0.4cm}
-\cventry{Sep 2016\\May 2011}{Software Engineer}{Multiple Companies}{}{}{Worked for the logistics and ecommerce (Amazon), banking (Indra and Bankia), machine learning research (Universidade de Santiago de Compostela and Universidade da Coruña), and business intelligence industries. \\ 
+
+\cventry{Jan 2018}{A Fireball for your Friends}{Combat Prototype and Spell Engine}{}{\url{http://bit.ly/fireball-prototype} (Source: \url{http://bit.ly/fireball-code})}{A \textbf{combat} prototype for an online multiplayer $3^{rd}$ person \textbf{magic duel game} with a focus on customization \\ 
+Built by myself on my free time (January 2018). Created a spell system with the objective of fast and easy iteration, a sample level, and a very tough enemy AI using only \textbf{UE4 Blueprints} and free assets from the UE4 store.
+}
+
+\cventry{Feb 2018}{Wrong Side}{Team Fortress 2 CTF Level}{}{\url{http://bit.ly/wrong-side}}{A Team Fortress 2 level focused on being fun on small servers (small number of players) \\
+Built by myself on my free time (February 2018) in 2 weeks without prior knowledge of the \textbf{Source engine}.
+}
+
+\newpage
+
+\section{Experience}
+\cventry{Today \\ Nov 2017}{Independent Game Designer and Developer}{}{}{}{Currently developing casual arcade games as a Technical Game Designer within a team of 14 people since January 2018.}
+
+\cventry{Nov 2017 \\ Sep 2016}{Game Design Student}{U-Tad}{Madrid}{}{Worked for a 16 people team (5 designers, 5 artists and 6 programmers) as a game designer developing our common master's capstone project. Also took part in Global Game Jam in Madrid.}
+
+\cventry{Sep 2016\\May 2011}{Software Engineer}{Multiple Companies}{Europe}{}{Worked for the logistics and ecommerce (Amazon), banking (Indra and Bankia), machine learning research (Universidade de Santiago de Compostela and Universidade da Coruña), and business intelligence industries. \\ 
 Developed mostly webpages, but also proof-of-concept systems based on new research and data analytics services. \\
 Lead and coached junior team members. \\
 Also contributed to a number of Open Source projects (http://bit.ly/pedros-github).
@@ -97,9 +100,9 @@ Also contributed to a number of Open Source projects (http://bit.ly/pedros-githu
 
 \section{Education}
 %\cventry{year--year}{Degree}{Institution}{City}{\textit{Grade}}{Description}
-\cventry{2016 - 2017}{Master's Degree in Game Design}{U-Tad}{}{7.7/10}{Game Design and Development, Final project: Hack and Slash game (Darkborn)}
-\cventry{2011 - 2016}{Master's Degree in Logic and the Philosophy of Science}{University of Santiago de Compostela}{}{7/10}{Cognitive Psychology, Metamathematics, Rationality, Microeconomics, Argumentation Theory and Artificial Intelligence}
-\cventry{2007 - 2011}{Bachelor's Degree in Computer Science}{University of Santiago de Compostela}{}{6.4/10}{Software Engineering, Project Management, Network and Systems administration, Optimization, Artificial Intelligence}
+\cventry{2016 - 2017}{Master's Degree in Game Design, {\normalfont \textit{7.7/10}}}{U-Tad}{Madrid}{}{Game Design and Development, Final project: Hack and Slash game (Darkborn)}
+\cventry{2011 - 2016}{Master's Degree in Logic and the Philosophy of Science, {\normalfont \textit{7.0/10}}}{University of Santiago de Compostela}{Santiago de Compostela}{}{Cognitive Psychology, Metamathematics, Rationality, Microeconomics, Argumentation Theory and Artificial Intelligence}
+\cventry{2007 - 2011}{Bachelor's Degree in Computer Science, {\normalfont \textit{6.4/10}}}{University of Santiago de Compostela}{Santiago de Compostela}{}{Software Engineering, Project Management, Network and Systems administration, Optimization, Artificial Intelligence}
 
 %\section{Master Thesis}
 %\cvline{Title}{\emph{The concept of intelligence after Computing Machinery and Intelligence: a historical perspective}.}

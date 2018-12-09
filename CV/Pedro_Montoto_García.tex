@@ -1,4 +1,5 @@
 \documentclass[12pt,a4paper]{moderncv}
+\usepackage{enumitem}
 
 % moderncv themes
 \moderncvtheme[red]{classic}                  % optional argument are 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
@@ -7,6 +8,8 @@
 % character encoding
 \usepackage[utf8]{inputenc}                   % replace by the encoding you are using
 \addpenalty{-1000}
+
+%\setlist[enumerate, 1]{leftmargin=\separatorrulewidth}
 
 % adjust the page margins
 \usepackage[scale=0.9]{geometry}
@@ -63,32 +66,38 @@ I have experience with the \textbf{Unreal Engine} for game development, having u
 (Updated: \today)
 
 \section{Qualities}
-\cvline{}{Strong analytical, problem-solving and communication skills}
-\cvline{}{Eager to learn and develop new skills according to project necessities, quick to adapt to new situations}
-\cvline{}{Experience in programming and project management techniques and tools}
-\cvline{}{Experience with data analysis to drive business processes}
-\cvline{}{Worked in different parts of Spain, Luxembourg and Great Britain}
+\begin{itemize}[label={}, leftmargin=\hintscolumnwidth+\separatorcolumnwidth]
+	\setlength{\itemsep}{.12em}
+	\item Strong analytical, problem-solving and communication skills
+	\item Eager to learn and adaptable
+	\item Experience in programming and project management techniques and tools
+	\item Experience with data analysis to drive business processes
+	\item Speaks 4 languages fluently and wants to learn more
+	\item Worked in different parts of Spain, Luxembourg, Sweden and Great Britain
+\end{itemize}
 
 \section{Selected Recent Works}
-\cventry{Nov 2017 \\ Feb 2017}{Darkborn}{Master's in Game Design Capstone Project}{}{\url{http://bit.ly/darkborn-demo} (Can send source code on request)}{A single player fast-paced \textbf{Hack\&Slash} built around a playstyle switch mechanic. \\
+\cventry{Jun 2018 \\ Nov 2018}{OVERKILL's The Walking Dead}{Full Game, as Technical Designer}{}{\url{http://bit.ly/otwd-pedro}}{OVERKILL's The Walking Dead is a four player co-op action FPS where you fight the dead as well as the living. Set in The Walking Dead Universe, you and your group try to survive in a post-apocalyptic Washington D.C.\\
+Credited as Technical Designer, worked primarily with the Level Design team, building level objects and systems and acting as liaison between creative and technical team members.
+}
+
+\cventry{Nov 2017 \\ Feb 2017}{Hack\&Slash, Darkborn}{Master's in Game Design Capstone Project}{}{\url{http://bit.ly/darkborn-demo} (Can send source code on request)}{A single player fast-paced \textbf{Hack\&Slash} built around a playstyle switch mechanic. \\
 Worked as the technical go-to person for the design team, developed the concept and core gameplay mechanics using mainly prototyping methods (\textbf{UE4 Blueprints and C++}). \\
 Main responsible for the sound design of the game. \\
 Also contributed prototypes and tweaks for animation and VFX reference in-engine. \\ 		
 Team composed of 5 designers, 5 artists and 6 programmers. Capstone project for MsC Game Design @ U-Tad.
 }
 
-\cventry{Jan 2018}{A Fireball for your Friends}{Combat Prototype and Spell Engine}{}{\url{http://bit.ly/fireball-prototype} (Source: \url{http://bit.ly/fireball-code})}{A \textbf{combat} prototype for an online multiplayer $3^{rd}$ person \textbf{magic duel game} with a focus on customization \\ 
+\cventry{Jan 2018}{UE4 Spell Engine}{Combat Prototype and Spell Engine}{}{\url{http://bit.ly/fireball-prototype} (Source: \url{http://bit.ly/fireball-code})}{A \textbf{combat} prototype for an online multiplayer $3^{rd}$ person \textbf{magic duel game} with a focus on customization \\ 
 Built by myself on my free time (January 2018). Created a spell system with the objective of fast and easy iteration, a sample level, and a very tough enemy AI using only \textbf{UE4 Blueprints} and free assets from the UE4 store.
-}
-
-\cventry{Feb 2018}{Wrong Side}{Team Fortress 2 CTF Level}{}{\url{http://bit.ly/wrong-side}}{A Team Fortress 2 level focused on being fun on small servers (small number of players) \\
-Built by myself on my free time (February 2018) in 2 weeks without prior knowledge of the \textbf{Source engine}.
 }
 
 \newpage
 
 \section{Experience}
-\cventry{Currently \\ Nov 2017}{Independent Game Designer and Developer}{}{}{}{Developing casual arcade games as a Technical Game Designer within a team of 14 people since January 2018.}
+\cventry{Currently \\ Jul 2018}{Technical Game Designer}{Starbreeze}{Stockholm, Sweden}{}{Developing casual arcade games as a Technical Game Designer within a team of 14 people since January 2018.}
+
+\cventry{Jun 2018 \\ Nov 2017}{Independent Game Designer and Developer}{}{}{}{Developing casual arcade games as a Technical Game Designer within a team of 14 people since January 2018.}
 
 \cventry{Nov 2017 \\ Sep 2016}{Game Design Student}{U-Tad}{Madrid}{}{Worked for a 16 people team (5 designers, 5 artists and 6 programmers) as a game designer developing our common master's capstone project. Also took part in Global Game Jam in Madrid.}
 

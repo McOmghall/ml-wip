@@ -1,0 +1,80 @@
+\documentclass[12pt,a4paper]{moderncv}
+\usepackage{enumitem}
+\usepackage{parskip}
+
+% moderncv themes
+\moderncvtheme[red]{classic}                  % optional argument are 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
+%\moderncvtheme[green]{classic}                % idem
+
+% character encoding
+\usepackage[utf8]{inputenc}                   % replace by the encoding you are using
+\addpenalty{-1000}
+
+%\setlist[enumerate, 1]{leftmargin=\separatorrulewidth}
+
+% adjust the page margins
+\usepackage[scale=0.9]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}						% if you want to change the width of the column with the dates
+%\AtBeginDocument{\setlength{\titlenamewidth}{6cm}}  % only for the classic theme, if you want to change the width of your name placeholder (to leave more space for your address details
+%\AtBeginDocument{\recomputelengths}                     % required when changes are made to page layout lengths
+
+\renewcommand*{\cventry}[7][.25em]{%
+  \cvitem[#1]{#2}{%
+    {\bfseries#3}%
+    \ifthenelse{\equal{#4}{}}{}{\newline{\slshape#4}}%
+    \ifthenelse{\equal{#5}{}}{}{, #5}%
+    \ifthenelse{\equal{#6}{}}{}{\newline #6}%
+    \strut%
+    \ifx&#7&%
+    \else{\newline{}\begin{minipage}[t]{\linewidth}\small#7\end{minipage}}\fi}}
+
+% personal data
+\firstname{Pedro}
+\familyname{Montoto García}
+\title{Technical Game Designer}               % optional, remove the line if not wanted
+%\address{}    % optional, remove the line if not wanted
+\mobile{+34 620 575581}                    % optional, remove the line if not wanted
+%\phone{+34 620 575581}                      % optional, remove the line if not wanted
+%\fax{fax (optional)}                          % optional, remove the line if not wanted
+\email{pmgberm@gmail.com}                      % optional, remove the line if not wanted
+%\email{\href{mailto:s.dakourou@gmail.com}{s.dakourou@gmail.com}}                      % optional, remove the line if not wanted
+\social[linkedin][http://bit.ly/pedros-linkedin]{pedromontoto}               % optional, remove the line if not wanted
+\social[github][http://bit.ly/pedros-github]{McOmghall}               % optional, remove the line if not wanted
+%¡\extrainfo{} % optional, remove the line if not wanted
+%\photo[64pt][0.4pt]{picture}                         % '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file; optional, remove the line if not wanted
+%\quote{Some quote (optional)}                 % optional, remove the line if not wanted
+
+% to show numerical labels in the bibliography; only useful if you make citations in your resume
+\makeatletter
+\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+\makeatother
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+
+%\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+
+\begin{document}
+\maketitle
+
+\setlength{\parindent}{0em}
+\setlength{\parskip}{1em}
+\renewcommand{\baselinestretch}{1.8} 
+
+Hello!
+
+I'm a highly motivated Game Designer with 6 years of diverse experience across Software developing positions in various industries and at various companies across Europe, and more than 2 years of professional Game Development experience. I have a MsC in Game Design from U-Tad (Madrid, Spain) and I've been developing games since January 2017. 
+
+I'm currently working with Starbreeze Studios, in Stockholm, Sweden.
+
+I have experience using a few scripting languages, both graphical (UE4 Blueprints) and text-based (javascript, ruby,...). I can also code in C++ and other general purpose languages like C\# and Java.
+
+When needed, I adapt to the situation and learn fast whatever the team needs.
+
+Since my Game Development experience is most of all on fast iteration and gameplay element creation, over a wide range of topics, I think I could make an impact for the better in your current projects.
+
+\end{document}

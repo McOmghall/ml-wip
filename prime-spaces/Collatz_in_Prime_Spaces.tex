@@ -1,0 +1,80 @@
+\documentclass[11pt,a4paper,fleqn]{article}
+\usepackage[utf8]{inputenc}         
+\usepackage{amsfonts} 
+\usepackage[scale=0.8]{geometry}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{amsmath}
+
+\newtheorem{define}{Definition}
+\newtheorem{trivial}{Statement}
+\newtheorem{theorem}{Theorem}
+
+\newcommand\Set[2]{\{\,#1\mid#2\,\}}
+
+\setlength{\mathindent}{3em}
+
+\begin{document}
+
+\begin{define}
+  Short modular notation:
+  \begin{subequations}
+    These are all equivalent, let $a, b, n \in \mathbb{Z}$
+    \begin{align}
+      a &\equiv &b &\mod n&\\
+      a &\equiv_{n} &b & &
+    \end{align}
+  \end{subequations}
+\end{define}
+
+\begin{define}
+  Set of all primes:
+  \begin{subequations}
+    These are all equivalent, let $n, m \in \mathbb{Z}$
+    \begin{align}
+      Primes &= \Set{n}{\nexists m \in Primes, n \equiv_{m} 0}\\
+      Primes &= \Set{n}{\forall m \in Primes, n \not\equiv_{m} 0}\\
+      Primes &= \Set{n}{\forall m \in Primes, gcd(m, n) = 1}\\
+      Primes &= \Set{n}{\nexists m \in (\mathbb{N} - Primes - \{1\}) \quad n \equiv_{m} 0}
+    \end{align}
+  \end{subequations}
+\end{define}
+
+\begin{trivial}
+  The set of all primes is a \textit{complete order} as a subset of all the orders on $\mathbb{Z}$
+\end{trivial}
+
+\begin{define}
+  Root of the Prime Space of order $n$, $R_{PS_{n}}$: let $P \subseteq Primes$ containing the first $n$ members of $Primes$ under the $<$ relation
+  \begin{equation}
+    R_{PS_{n}} = \{-1\} \cup P
+  \end{equation}
+\end{define}
+
+\begin{trivial}
+  $R_{PS_{n}}$ contains exactly $n + 1$ members
+  \begin{equation}
+    \vert R_{PS_{n}} \vert = n + 1
+  \end{equation}
+\end{trivial}
+
+\begin{trivial}
+  Closing $R_{PS_{n}}$ under $*$ contains all the $m \in \mathbb{Z}$ such that $\forall p \in R_{PS_{n}}, m \equiv_{p} 0$
+  \begin{equation}
+    cl(\langle R_{PS_{n}}, *\rangle) = \Set{m \in \mathbb{Z}}{\forall p \in R_{PS_{n}}, m \equiv_{p} 0}
+  \end{equation}
+  But not those $m \in \mathbb{Z}$ that $\forall p \in (Primes \oplus R_{PS_{n}}), m \equiv_{p} 0$
+  \begin{equation}
+    cl(\langle R_{PS_{n}}, *\rangle) \cap cl(\langle Primes \oplus R_{PS_{n}}, *\rangle) = \emptyset
+  \end{equation}
+\end{trivial}
+
+\begin{define}
+  Prime Space, $PS_n$:
+  \begin{equation}
+    PS_n = cl(\langle R_{PS_{n}}, * \rangle)
+  \end{equation}
+\end{define}
+
+
+\end{document}

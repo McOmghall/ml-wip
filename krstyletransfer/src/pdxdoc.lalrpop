@@ -1,0 +1,44 @@
+grammar(identifiers: &mut Vec<String>);
+
+match {
+    r#"".*"|'.*'"# => STRANGE,
+} else {
+    r"\u{feff}" => { },                         // Ignore BOM
+    r"(([\n\r]+)|#+[^\n\r]*[\n\r]+)" => { },    // Treat Comments as newlines
+    r"[ \t]+" => { },                           // WHITESPACE
+    r"<=|>=|<|>|=" => COMP,
+    "{" => LBRACE,
+    "}" => RBRACE,
+    r"[a-zA-Z0-9_\.\-\+@:\?]+" => KEY,
+}
+
+pub PDXTokens = (@R TERMLIST @L)*;
+
+pub PDXDoc = BLOCK*;
+
+BLOCKCONTENTS = BLOCK*;
+
+pub BLOCK: String = {
+    <k:KEY> COMP TERM => {
+        identifiers.push(k.to_string());
+        format!("K1 {}", k)
+    },
+    <k:KEY> COMP LBRACE BLOCKCONTENTS RBRACE => {
+        identifiers.push(k.to_string());
+        format!("K2 {}", k)
+    },
+    <k:KEY> => {
+        identifiers.push(k.to_string());
+        format!("K1 {}", k)
+    },
+}
+
+TERMLIST: String = {
+    TERM => <>,
+    COMP => format!("EQ {}", <>),
+}
+
+TERM: String = {
+    STRANGE => format!("STR {}", <>),
+    KEY => format!("KEY {}", <>),
+}

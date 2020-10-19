@@ -3,6 +3,7 @@ use image::{*};
 use log::*;
 use imageproc::*;
 use walkdir::{WalkDir};
+use rayon::prelude::*;
 
 #[derive(Clone)]
 struct ImageData {
@@ -29,20 +30,31 @@ pub fn average_all_images(startup_path: &Path) {
 
     info!(target: "kr_style_transfer", "Running over {:?} images", count);
     let mut inner = images.clone();
+    const chunk_size: i32 = 4;
     loop  {
-        let innerproc = &inner.chunks_exact(2);
-        let mut processing_images: Vec<DynamicImage> = innerproc.clone().map(|a| {
-                let img1 = a[0].clone().resize_exact(bounds.0, bounds.1, imageops::FilterType::Gaussian);
-                let img2 = a[1].clone().resize_exact(bounds.0, bounds.1, imageops::FilterType::Gaussian);
-                DynamicImage::ImageRgba8(map::map_colors2(&img1, &img2, |a, b| {
-                    let r = a.map2(&b, |ca, cb| { ((ca as f32 + cb as f32) / 2 as f32).round() as u8  });
-                    r
-                }))
-            }).collect();
-            
-        if innerproc.remainder().len() > 0 {
-            processing_images.push(innerproc.remainder()[0].clone())
-        };
+        let innerproc = inner.par_chunks_exact(chunk_size as usize);
+        let mut processing_images: Vec<DynamicImage> = Vec::new();
+        processing_images.append(innerproc.remainder().to_vec().as_mut());
+
+        processing_images.par_extend(innerproc.map(|a| {
+            let img1 = a[0].clone().resize_exact(bounds.0, bounds.1, imageops::FilterType::Gaussian);
+            let img2 = a[1].clone().resize_exact(bounds.0, bounds.1, imageops::FilterType::Gaussian);
+            let img3 = a[2].clone().resize_exact(bounds.0, bounds.1, imageops::FilterType::Gaussian);
+            let img4 = a[3].clone().resize_exact(bounds.0, bounds.1, imageops::FilterType::Gaussian);
+            let subimg1 = DynamicImage::ImageRgba8(map::map_colors2(&img1, &img2, |a, b| {
+                let r = a.map2(&b, |ca, cb| { ((ca as f32 + cb as f32) / 2 as f32).round() as u8  });
+                r
+            }));
+            let subimg2 = DynamicImage::ImageRgba8(map::map_colors2(&img3, &img4, |a, b| {
+                let r = a.map2(&b, |ca, cb| { ((ca as f32 + cb as f32) / 2 as f32).round() as u8  });
+                r
+            }));
+            let subimgfinal = DynamicImage::ImageRgba8(map::map_colors2(&subimg1, &subimg2, |a, b| {
+                let r = a.map2(&b, |ca, cb| { ((ca as f32 + cb as f32) / 2 as f32).round() as u8  });
+                r
+            }));
+            subimgfinal
+        }));
 
         if processing_images.len() == 1 {
             processing_images.first().expect("WOT").save_with_format(format!("./test-{}.png", "true"), ImageFormat::Png);
